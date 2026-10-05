@@ -38,6 +38,7 @@ final class Visital_Core {
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-calendar.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-reviews.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-callmask.php';
+		require_once VISITAL_CORE_DIR . 'includes/class-visital-claim.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-assets.php';
 	}
 
@@ -51,6 +52,7 @@ final class Visital_Core {
 		Visital_Calendar::instance();
 		Visital_Reviews::instance();
 		Visital_CallMask::instance();
+		Visital_Claim::instance();
 		Visital_Assets::instance();
 	}
 

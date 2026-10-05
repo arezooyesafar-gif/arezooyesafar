@@ -61,3 +61,23 @@ body.visital-dark .visital-review-breakdown-value{color:#72e0bd}
 .visital-review-breakdown-value{grid-area:value}
 .visital-review-breakdown-bar{grid-area:bar}
 }
+
+.visital-claim-gate{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:1rem;background:rgba(9,20,30,.72);backdrop-filter:blur(3px)}
+.visital-claim-box{width:100%;max-width:26rem;box-sizing:border-box;padding:1.5rem;border-radius:16px;background:#fff;box-shadow:0 24px 60px rgba(6,20,30,.35);direction:rtl;text-align:right}
+.visital-claim-title{margin:0 0 .4rem;font-size:1.25rem;font-weight:800;color:#102a43}
+.visital-claim-lead{margin:0 0 1.1rem;font-size:.9rem;color:#52708a;line-height:1.9}
+.visital-claim-step{display:flex;flex-direction:column;gap:.55rem}
+.visital-claim-label{font-size:.82rem;font-weight:700;color:#33505f}
+.visital-claim-input{width:100%;box-sizing:border-box;min-height:3rem;padding:.6rem .85rem;border:1px solid #cddbe3;border-radius:10px;font:inherit;background:#fbfdfe}
+.visital-claim-input:focus{outline:0;border-color:#0c9989;box-shadow:0 0 0 3px rgba(12,153,137,.14)}
+.visital-claim-btn{min-height:3rem;border:0;border-radius:10px;background:#0c9989;color:#fff;font:inherit;font-weight:800;cursor:pointer;transition:background .2s ease}
+.visital-claim-btn:hover{background:#087f73}
+.visital-claim-match{padding:.6rem .8rem;border-radius:10px;background:#e7f8f1;border:1px solid #c6ecdd;color:#07543e;font-size:.85rem;line-height:1.8}
+.visital-claim-match:empty{display:none}
+.visital-claim-message{min-height:1.1rem;font-size:.8rem;line-height:1.7}
+.visital-claim-message[data-type="error"]{color:#c0564b}
+body.visital-dark .visital-claim-box{background:#102130;color:#e8f7f3}
+body.visital-dark .visital-claim-title{color:#e8f7f3}
+body.visital-dark .visital-claim-lead{color:#9fb2bd}
+body.visital-dark .visital-claim-input{background:#0f1b2b;border-color:#2b3d52;color:#e7eef7}
+body.visital-dark .visital-claim-match{background:#13342b;border-color:#1f5346;color:#b9f5e8}

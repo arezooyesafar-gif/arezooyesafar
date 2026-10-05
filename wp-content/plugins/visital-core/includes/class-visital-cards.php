@@ -39,7 +39,7 @@ class Visital_Cards {
 			}
 			return sprintf(
 				'<div class="visital-next-slot visital-next-slot--none"><span class="visital-next-slot-value">%s</span></div>',
-				esc_html__( 'No active appointment', 'visital-core' )
+				esc_html__( 'بدون نوبت فعال', 'visital-core' )
 			);
 		}
 
@@ -47,7 +47,7 @@ class Visital_Cards {
 
 		$badge = sprintf(
 			'<div class="visital-next-slot visital-next-slot--available"><i class="drplus-icon-clock-fill" aria-hidden="true"></i><span class="visital-next-slot-label">%s</span><span class="visital-next-slot-value">%s</span></div>',
-			esc_html__( 'Next available slot', 'visital-core' ),
+			esc_html__( 'اولین نوبت خالی', 'visital-core' ),
 			esc_html( $value )
 		);
 

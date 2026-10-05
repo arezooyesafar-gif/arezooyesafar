@@ -50,5 +50,19 @@ class Visital_Assets {
 			VISITAL_CORE_VERSION,
 			true
 		);
+
+		wp_localize_script(
+			'visital-calendar',
+			'visitalCalendar',
+			[
+				'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+				'nonce'   => wp_create_nonce( 'visital_day_capacity' ),
+				'rtl'     => is_rtl() ? 1 : 0,
+				'labels'  => [
+					'remaining' => esc_html__( 'خالی', 'visital-core' ),
+					'full'      => esc_html__( 'تکمیل', 'visital-core' ),
+				],
+			]
+		);
 	}
 }

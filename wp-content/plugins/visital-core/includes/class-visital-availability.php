@@ -196,9 +196,9 @@ class Visital_Availability {
 		$tomorrow = ( new DateTime( 'now', $timezone ) )->modify( '+1 day' )->format( 'Y-m-d' );
 
 		if ( $slot['date'] === $today ) {
-			$day_label = esc_html__( 'Today', 'visital-core' );
+			$day_label = esc_html__( 'امروز', 'visital-core' );
 		} elseif ( $slot['date'] === $tomorrow ) {
-			$day_label = esc_html__( 'Tomorrow', 'visital-core' );
+			$day_label = esc_html__( 'فردا', 'visital-core' );
 		} elseif ( class_exists( '\DrPlus\Utils\Date' ) ) {
 			$day_label = \DrPlus\Utils\Date::jdate( 'l j F', $slot['timestamp'] );
 		} else {
@@ -210,7 +210,7 @@ class Visital_Availability {
 			$time = \DrPlus\Utils\Date::tr_num( $time, 'fa' );
 		}
 
-		return sprintf( '%s %s %s', $day_label, esc_html__( 'at', 'visital-core' ), $time );
+		return sprintf( '%s %s %s', $day_label, esc_html__( 'ساعت', 'visital-core' ), $time );
 	}
 
 	public function flush_specialist( $specialist_id ) {

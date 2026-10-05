@@ -1,0 +1,22 @@
+VISITAL FRONT-END RECOVERY (2026-09-24)
+
+This bundle repairs the existing Doctor Plus child theme without touching WordPress content or doctor records.
+
+INSTALL
+1. Back up the current files listed below.
+2. Upload this bundle's wp-content folder into the Visital document root (the folder that already contains wp-content), merging folders and replacing only matching filenames.
+3. Purge the WordPress/page cache and reload the homepage, /search/, and /doctors/.
+
+FILES
+- wp-content/themes/dr-plus-child/client-overrides.php
+  Restores the custom search/directory routes and archive loader, and targets the live Elementor header/footer markup for theme switching, logo behavior, and layout fixes.
+- wp-content/themes/dr-plus-child/archive-specialist-directory.php
+  Restores the custom search and category directory page.
+- wp-content/uploads/visital-assets/visital-theme-toggle-light.png
+- wp-content/uploads/visital-assets/visital-theme-toggle-dark.png
+  Clean transparent header toggle marks; the light asset is the sun version.
+- wp-content/uploads/visital-assets/visital-logo-light-wordmark.png
+- wp-content/uploads/visital-assets/visital-logo-transparent.png
+  Transparent light/dark Visital wordmarks used in the header and footer.
+
+The child theme's existing functions.php must already include client-overrides.php, as the live homepage's custom features currently do. If not, add its existing require_once line before expecting the PHP fixes to run.

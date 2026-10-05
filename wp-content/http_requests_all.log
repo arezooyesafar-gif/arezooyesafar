@@ -1,0 +1,1144 @@
+2026-09-12 17:58:57 - https://visital.ir/wp-cron.php?doing_wp_cron=1789235937.8290979862213134765625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 17:59:51 - https://visital.ir/wp-cron.php?doing_wp_cron=1789235991.6298649311065673828125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:00:33 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236032.9790449142456054687500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:01:25 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236085.6488780975341796875000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:02:06 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236126.1804289817810058593750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:02:45 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236165.9777400493621826171875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:03:11 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236191.6771841049194335937500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:03:53 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236233.8020598888397216796875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:04:20 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236260.5305199623107910156250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:04:43 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236283.7824180126190185546875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:04:52 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236292.3411519527435302734375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:06:41 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236401.2476069927215576171875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:08:56 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236536.2493829727172851562500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:09:26 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236566.5651810169219970703125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:10:02 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236602.5698199272155761718750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:10:16 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236616.5470519065856933593750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:11:05 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236665.0324370861053466796875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:11:54 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236714.0592451095581054687500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:13:45 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236825.6132268905639648437500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:14:19 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236859.8659689426422119140625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:15:03 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236903.8336861133575439453125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:15:24 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236923.9945209026336669921875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:16:28 - https://visital.ir/wp-cron.php?doing_wp_cron=1789236988.0342099666595458984375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:17:15 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237035.7257699966430664062500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:17:53 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237073.3505549430847167968750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:18:26 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237106.1375360488891601562500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:19:08 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237148.2262771129608154296875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:20:37 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237237.4065389633178710937500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:21:15 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237275.5819981098175048828125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:21:44 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237303.9948830604553222656250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:22:21 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237341.1194911003112792968750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:22:54 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237374.2553529739379882812500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:23:24 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237404.0120310783386230468750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:23:35 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237415.4347798824310302734375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:24:30 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237470.1500449180603027343750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:24:43 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237483.8545010089874267578125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:25:18 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237518.6613891124725341796875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:25:45 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237545.3219919204711914062500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:26:19 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237579.9268341064453125000000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:26:39 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237599.8005769252777099609375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:27:30 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237650.8645310401916503906250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:28:39 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237719.0569140911102294921875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:29:13 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237753.5684731006622314453125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:29:51 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237791.5100100040435791015625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:30:38 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237838.5657229423522949218750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:31:55 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237915.6158959865570068359375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:32:31 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237951.1448910236358642578125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:32:47 - https://visital.ir/wp-cron.php?doing_wp_cron=1789237967.9186420440673828125000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:33:36 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238016.8619480133056640625000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:34:26 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238066.2470440864562988281250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:34:50 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238090.4720110893249511718750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:35:36 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238136.6834709644317626953125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:36:11 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238171.6239070892333984375000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:36:56 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238216.4144310951232910156250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:37:13 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238233.2431359291076660156250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:37:37 - https://visital.ir/wp-cron.php?doing_wp_cron=1789238257.3804481029510498046875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:50:31 - https://visital.ir/wp-cron.php?doing_wp_cron=1789239031.9202320575714111328125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 18:50:37 - https://visital.ir/wp-cron.php?doing_wp_cron=1789239037.0704119205474853515625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:30:02 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241396.8500289916992187500000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:31:24 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241484.7347869873046875000000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:31:59 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241519.9310159683227539062500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:32:16 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241536.2692170143127441406250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:32:51 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241571.4884889125823974609375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:34:02 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241642.3082010746002197265625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:34:23 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241663.5559949874877929687500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:34:36 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241676.8062319755554199218750
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:35:25 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241725.6489140987396240234375
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:37:50 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241870.3466210365295410156250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:38:24 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241904.2609601020812988281250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:39:22 - https://visital.ir/wp-cron.php?doing_wp_cron=1789241962.4195311069488525390625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:41:12 - https://visital.ir/wp-cron.php?doing_wp_cron=1789242072.9374830722808837890625
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:53:57 - https://visital.ir/wp-cron.php?doing_wp_cron=1789242837.5261669158935546875000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:54:00 - https://api.wordpress.org/core/version-check/1.7/?version=7.1&php=8.2.33&locale=fa_IR&mysql=8.0.46-cll-lve&local_package=fa_IR&blogs=1&users=7972&multisite_enabled=0&initial_db_version=58975&extensions%5Bbcmath%5D=8.2.33&extensions%5Bbz2%5D=8.2.33&extensions%5Bcalendar%5D=8.2.33&extensions%5BCore%5D=8.2.33&extensions%5Bctype%5D=8.2.33&extensions%5Bcurl%5D=8.2.33&extensions%5Bdate%5D=8.2.33&extensions%5Bdom%5D=20031129&extensions%5Bexif%5D=8.2.33&extensions%5Bfileinfo%5D=8.2.33&extensions%5Bfilter%5D=8.2.33&extensions%5Bftp%5D=8.2.33&extensions%5Bgd%5D=8.2.33&extensions%5Bgettext%5D=8.2.33&extensions%5Bhash%5D=8.2.33&extensions%5Biconv%5D=8.2.33&extensions%5Bigbinary%5D=3.2.16&extensions%5Bimagick%5D=3.8.1&extensions%5Bimap%5D=8.2.33&extensions%5Bintl%5D=8.2.33&extensions%5BionCube+Loader%5D=15.5.0&extensions%5Bjson%5D=8.2.33&extensions%5Blibxml%5D=8.2.33&extensions%5Blitespeed%5D=0&extensions%5Bmbstring%5D=8.2.33&extensions%5Bmcrypt%5D=1.0.9&extensions%5Bmemcache%5D=8.2&extensions%5Bmemcached%5D=3.4.0&extensions%5Bmysqli%5D=8.2.33&extensions%5Bmysqlnd%5D=mysqlnd+8.2.33&extensions%5Bopenssl%5D=8.2.33&extensions%5Bpcntl%5D=8.2.33&extensions%5Bpcre%5D=8.2.33&extensions%5BPDO%5D=8.2.33&extensions%5Bpdo_mysql%5D=8.2.33&extensions%5Bpdo_sqlite%5D=8.2.33&extensions%5BPhar%5D=8.2.33&extensions%5Brandom%5D=8.2.33&extensions%5Breadline%5D=8.2.33&extensions%5BReflection%5D=8.2.33&extensions%5Bsession%5D=8.2.33&extensions%5Bshmop%5D=8.2.33&extensions%5BSimpleXML%5D=8.2.33&extensions%5Bsoap%5D=8.2.33&extensions%5Bsockets%5D=8.2.33&extensions%5BSourceGuardian%5D=17.0.0&extensions%5BSPL%5D=8.2.33&extensions%5Bsqlite3%5D=8.2.33&extensions%5Bstandard%5D=8.2.33&extensions%5Btimezonedb%5D=2026.3&extensions%5Btokenizer%5D=8.2.33&extensions%5Bxml%5D=8.2.33&extensions%5Bxmlreader%5D=8.2.33&extensions%5Bxmlrpc%5D=1.0.0RC3&extensions%5Bxmlwriter%5D=8.2.33&extensions%5Bxsl%5D=8.2.33&extensions%5Bzip%5D=1.21.1&extensions%5Bzlib%5D=8.2.33&platform_flags%5Bos%5D=Linux&platform_flags%5Bbits%5D=64&image_support%5Bgd%5D%5B0%5D=webp&image_support%5Bgd%5D%5B1%5D=avif&image_support%5Bimagick%5D%5B0%5D=webp&image_support%5Bimagick%5D%5B1%5D=avif&image_support%5Bimagick%5D%5B2%5D=heic
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/update.php:246 - wp_remote_post
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - wp_version_check
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:571 - do_action
+
+
+2026-09-12 19:54:00 - https://api.wordpress.org/plugins/update-check/1.1/
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/update.php:472 - wp_remote_post
+/home/h415102/public_html/wp-admin/includes/class-wp-automatic-updater.php:668 - wp_update_plugins
+/home/h415102/public_html/wp-includes/update.php:890 - run
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - wp_maybe_auto_update
+
+
+2026-09-12 19:54:01 - https://sheydateam.ir/api/sheyda/v2/product/check_version?product=drplus&version=2.7.7.0
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:657 - request
+/home/h415102/public_html/wp-includes/http.php:189 - get
+/home/h415102/public_html/wp-content/themes/dr-plus/inc/Updates/Update.php:183 - wp_remote_get
+/home/h415102/public_html/wp-content/themes/dr-plus/inc/Updates/Update.php:276 - get_update_response
+/home/h415102/public_html/wp-includes/class-wp-hook.php:355 - theme_update_checker
+/home/h415102/public_html/wp-includes/plugin.php:206 - apply_filters
+
+
+2026-09-12 19:54:01 - https://api.wordpress.org/themes/update-check/1.1/
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/update.php:758 - wp_remote_post
+/home/h415102/public_html/wp-admin/includes/class-wp-automatic-updater.php:688 - wp_update_themes
+/home/h415102/public_html/wp-includes/update.php:890 - run
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - wp_maybe_auto_update
+
+
+2026-09-12 19:54:02 - https://api.wordpress.org/themes/update-check/1.1/
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/update.php:758 - wp_remote_post
+/home/h415102/public_html/wp-admin/includes/class-wp-automatic-updater.php:728 - wp_update_themes
+/home/h415102/public_html/wp-includes/update.php:890 - run
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - wp_maybe_auto_update
+
+
+2026-09-12 19:54:03 - https://api.wordpress.org/plugins/update-check/1.1/
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/update.php:472 - wp_remote_post
+/home/h415102/public_html/wp-admin/includes/class-wp-automatic-updater.php:736 - wp_update_plugins
+/home/h415102/public_html/wp-includes/update.php:890 - run
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - wp_maybe_auto_update
+
+
+2026-09-12 19:55:16 - https://visital.ir/wp-cron.php?doing_wp_cron=1789242916.8799540996551513671875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:55:19 - https://notifications.duplicator.com/dp-notifications.json
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:657 - request
+/home/h415102/public_html/wp-includes/http.php:189 - get
+/home/h415102/public_html/wp-content/plugins/duplicator/src/Core/Notifications/Notifications.php:122 - wp_remote_get
+/home/h415102/public_html/wp-content/plugins/duplicator/src/Core/Notifications/Notifications.php:364 - fetchFeed
+/home/h415102/public_html/wp-content/plugins/duplicator/src/Core/Notifications/Notifications.php:72 - update
+/home/h415102/public_html/wp-content/plugins/duplicator/src/Core/Bootstrap.php:126 - init
+
+
+2026-09-12 19:55:39 - https://visital.ir/wp-cron.php?doing_wp_cron=1789242939.4868950843811035156250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:57:41 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243061.8573760986328125000000
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:58:12 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243092.9755449295043945312500
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:59:29 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243169.8614799976348876953125
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 19:59:35 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243175.6148190498352050781250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 20:00:23 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243223.0089690685272216796875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 20:00:50 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243250.7344501018524169921875
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+
+2026-09-12 20:01:17 - https://visital.ir/wp-cron.php?doing_wp_cron=1789243277.6015820503234863281250
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - {closure}
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+/home/h415102/public_html/wp-includes/plugin.php:523 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:441 - do_action
+/home/h415102/public_html/wp-includes/class-wp-http.php:639 - request
+/home/h415102/public_html/wp-includes/http.php:210 - post
+/home/h415102/public_html/wp-includes/cron.php:999 - wp_remote_post
+/home/h415102/public_html/wp-includes/cron.php:1082 - spawn_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:353 - _wp_cron
+/home/h415102/public_html/wp-includes/class-wp-hook.php:377 - apply_filters
+
+

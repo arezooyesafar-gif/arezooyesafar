@@ -1,0 +1,119 @@
+URL: /doctors/page/2/
+Total DB Time: 0.087367296218872s
+
+
+URL: /doctors/page/2/
+Total DB Time: 0.085298538208008s
+
+
+URL: /doctors/
+Total DB Time: 0.093883037567139s
+
+
+URL: /doctors/page/2/
+Total DB Time: 0.094185829162598s
+
+
+URL: /doctors/
+Total DB Time: 0.095360517501831s
+
+
+URL: /doctors/
+Total DB Time: 0.09388542175293s
+
+
+URL: /doctors
+Total DB Time: 0.029509544372559s
+
+
+URL: /doctors/
+Total DB Time: 0.086293697357178s
+
+
+URL: /doctors
+Total DB Time: 0.024982690811157s
+
+
+URL: /doctors/
+Total DB Time: 0.084988594055176s
+
+
+URL: /doctors
+[0.4950s] 
+            SELECT p.ID 
+            FROM Dj3i_posts p
+             JOIN Dj3i_term_relationships tr ON p.ID = tr.object_id  JOIN Dj3i_term_taxonomy tt ON (tr.term_taxonomy_id = tt.term_taxonomy_id AND tt.taxonomy = 'hospital_category' AND tt.term_id = 305) 
+            WHERE p.post_type = 'specialist' AND p.post_status = 'publish'
+            ORDER BY p.comment_count DESC, p.ID ASC
+        
+Total DB Time: 0.56000018119812s
+
+
+URL: /doctors/
+Total DB Time: 0.083872556686401s
+
+
+URL: /doctors
+Total DB Time: 0.02802038192749s
+
+
+URL: /doctors/
+Total DB Time: 0.097808599472046s
+
+
+URL: /doctors
+Total DB Time: 0.027265310287476s
+
+
+URL: /doctors/
+Total DB Time: 0.097828388214111s
+
+
+URL: /doctors
+[0.5306s] 
+            SELECT p.ID 
+            FROM Dj3i_posts p
+             JOIN Dj3i_term_relationships tr ON p.ID = tr.object_id  JOIN Dj3i_term_taxonomy tt ON (tr.term_taxonomy_id = tt.term_taxonomy_id AND tt.taxonomy = 'hospital_category' AND tt.term_id = 305) 
+            WHERE p.post_type = 'specialist' AND p.post_status = 'publish'
+            ORDER BY p.comment_count DESC, p.ID ASC
+        
+Total DB Time: 0.58779144287109s
+
+
+URL: /doctors/
+[0.0565s] SELECT SQL_CALC_FOUND_ROWS Dj3i_users.ID
+				 FROM Dj3i_users INNER JOIN `Dj3i_drplus_specialists` AS dr_sp ON `Dj3i_users`.`ID`=dr_sp.`user_id`
+				 WHERE 1=1 AND dr_sp.`status`='active'
+				 ORDER BY user_registered DESC
+				 LIMIT 0, 5
+Total DB Time: 0.12230134010315s
+
+
+URL: /doctors
+Total DB Time: 0.028122663497925s
+
+
+URL: /doctors/
+Total DB Time: 0.11183857917786s
+
+
+URL: /doctors
+Total DB Time: 0.025439262390137s
+
+
+URL: /doctors/
+Total DB Time: 0.091024875640869s
+
+
+URL: /doctors/
+Total DB Time: 0.082371711730957s
+
+
+URL: /doctors/
+Total DB Time: 0.09170389175415s
+
+
+URL: /doctors/
+Total DB Time: 0.085594892501831s
+
+

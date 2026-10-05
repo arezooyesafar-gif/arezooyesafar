@@ -1,0 +1,29 @@
+# Database backups
+*.sql
+*.sql.gz
+
+# Old htaccess backups
+.htaccess.bk
+.htaccess.maintbak
+
+# Environment secrets
+.env
+.env.*
+
+# Git
+.git/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+*.temp
+*.swp
+*~

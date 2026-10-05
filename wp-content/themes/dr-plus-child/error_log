@@ -1,0 +1,4 @@
+[12-Sep-2026 20:56:33 Asia/Tehran] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/h415102/public_html/wp-content/themes/dr-plus-child/client-overrides.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/h415102/public_html/wp-content/themes/dr-plus-child/client-overrides.php on line 13

@@ -1,0 +1,124 @@
+# Translation of Plugins - Post Duplicator - Stable (latest release) in Persian
+# This file is distributed under the same license as the Plugins - Post Duplicator - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-06-09 12:19:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fa\n"
+"Project-Id-Version: Plugins - Post Duplicator - Stable (latest release)\n"
+
+#: includes/notices.php:21
+msgid "here"
+msgstr "اینجا"
+
+#: includes/settings.php:116
+msgid "Post Type"
+msgstr "نوع نوشته"
+
+#: includes/settings.php:125
+msgid "Original Post Author"
+msgstr "نویسنده نوشته اصلی"
+
+#: includes/settings.php:124
+msgid "Current User"
+msgstr "کاربر کنونی"
+
+#: includes/settings.php:122
+msgid "Post Author"
+msgstr "نویسنده نوشته"
+
+#: includes/settings.php:143
+msgid "String that should be appended to the duplicate post's title"
+msgstr "رشته‌ای که باید به عنوان نوشته اضافه شود"
+
+#: includes/settings.php:142
+msgid "Duplicate Title"
+msgstr "تکثیر عنوان"
+
+#: includes/api.php:56 includes/settings.php:59
+msgid "Copy"
+msgstr "رونوشت"
+
+#: includes/settings.php:149
+msgid "String that should be appended to the duplicate post's slug"
+msgstr "رشته‌ای که باید به نامک پست‌ها اضافه شود"
+
+#: includes/settings.php:148
+msgid "Duplicate Slug"
+msgstr "تکرار نامک"
+
+#: includes/notices.php:22
+msgid "Successfully Duplicated! You can edit your new %1$s %2$s."
+msgstr "با موفقیت تکثیر شد. شما می‌توانید %1$s %2$s جدید خود را ویرایش کنید."
+
+#: includes/edit.php:36
+msgid "Duplicate %1$s to %2$s"
+msgstr "تکثیر %1$s به %2$s"
+
+#. Author URI of the plugin
+#: m4c-postduplicator.php
+msgid "http://www.metaphorcreations.com"
+msgstr "http://www.metaphorcreations.com"
+
+#. Author of the plugin
+#: m4c-postduplicator.php
+msgid "Metaphor Creations"
+msgstr "Metaphor Creations"
+
+#. Description of the plugin
+#: m4c-postduplicator.php
+msgid "Creates functionality to duplicate any and all post types, including taxonomies & custom fields"
+msgstr "قابلیتی را برای کپی کردن هر نوع پست، از جمله طبقه‌بندی‌ها و فیلدهای سفارشی، ایجاد می‌کند"
+
+#. Plugin Name of the plugin
+#: m4c-postduplicator.php includes/settings.php:18
+msgid "Post Duplicator"
+msgstr "تکثیر نوشته"
+
+#: includes/settings.php:17
+msgid "Post Duplicator Settings"
+msgstr "تنظیمات تکثیر نوشته"
+
+#: includes/settings.php:154
+msgid "Offset Date"
+msgstr "تاریخ شروع"
+
+#: includes/settings.php:135
+msgid "Current Time"
+msgstr "زمان جاری"
+
+#: includes/settings.php:134
+msgid "Duplicate Timestamp"
+msgstr "تکثیر برچسب زمانی"
+
+#: includes/settings.php:132
+msgid "Post Date"
+msgstr "تاریخ نوشته"
+
+#: includes/settings.php:110
+msgid "Pending"
+msgstr "در انتظار"
+
+#: includes/settings.php:109
+msgid "Published"
+msgstr "منتشر شده"
+
+#: includes/settings.php:108
+msgid "Draft"
+msgstr "پیش‌نویس"
+
+#: includes/helpers.php:9 includes/settings.php:107
+msgid "Same as original"
+msgstr "مانند نسخه اصلی"
+
+#: includes/settings.php:105
+msgid "Post Status"
+msgstr "وضعیت نوشته"
+
+#: includes/edit.php:30 includes/hooks.php:36
+msgid "Duplicate %s"
+msgstr "تکثیر %s"

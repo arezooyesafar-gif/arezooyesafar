@@ -1,0 +1,1185 @@
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-0 START @ 09:33:26
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
+OS__________________: Linux                                 |Linux
+PHP VERSION_________: 8.3.6                                 |8.2.33
+********************************************************************************
+CURRENT SERVER INFO
+PHP_________________: 8.2.33 | SAPI: litespeed
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+ARCHITECTURE________: 64-bit
+SERVER______________: LiteSpeed
+DOC ROOT____________: "/home/h415102/public_html"
+REQUEST URL_________: "https://visital.ir"
+********************************************************************************
+OVERWRITE PARAMS
+ *** FROM PACKAGE
+PARAM SET KEY[blogname]
+********************************************************************************
+MAINTENANCE MODE DISABLE
+INSTALLER INFO
+
+TEMPLATE____________: "base"
+SECURE MODE_________: "none"
+URL PLUGINS_________: http://localhost/drplus-demo/wp-content/plugins
+VALIDATE ON START___: "normal"
+PATH_NEW____________: "/home/h415102/public_html"
+URL_NEW_____________: "https://visital.ir"
+********************************************************************************
+ARCHIVE INFO
+
+ARCHIVE NAME________: "/home/h415102/public_html/20251226_d8afdaa9d8aad8b1d9bed984d8a7d8_[HASH]_20260816160440_archive.zip"
+ARCHIVE SIZE________: 146.64MB
+CREATED_____________: 2026-08-16 16:04:40
+WP VERSION__________: 7.0.4
+DUP VERSION_________: 1.5.16.1
+LICENSE_____________: Free version
+DB VERSION__________: 10.11.14
+DB FILE SIZE________: 9.19MB
+DB TABLES___________: 78
+DB ROWS_____________: 6046
+URL HOME____________: http://localhost/drplus-demo
+URL CORE____________: http://localhost/drplus-demo
+URL CONTENT_________: http://localhost/drplus-demo/wp-content
+URL UPLOAD__________: http://localhost/drplus-demo/wp-content/uploads
+URL PLUGINS_________: http://localhost/drplus-demo/wp-content/plugins
+URL MU PLUGINS______: http://localhost/drplus-demo/wp-content/mu-plugins
+URL THEMES__________: http://localhost/drplus-demo/wp-content/themes
+PATH HOME___________: /var/www/html/drplus-demo
+PATH ABS____________: /var/www/html/drplus-demo
+PATH WPCONFIG_______: /var/www/html/drplus-demo
+PATH WPCONTENT______: /var/www/html/drplus-demo/wp-content
+PATH UPLOADS________: /var/www/html/drplus-demo/wp-content/uploads
+PATH PLUGINS________: /var/www/html/drplus-demo/wp-content/plugins
+PATH MUPLUGINS______: /var/www/html/drplus-demo/wp-content/mu-plugins
+PATH THEMES_________: /var/www/html/drplus-demo/wp-content/themes
+
+SUBSITES
+SUBSITE [ID:   1] "localhost/drplus-demo/"
+
+PLUGINS
+PLUGIN [SLUG:classic-editor/classic-editor.php                 ][ON:true ]  Classic Editor
+PLUGIN [SLUG:classic-widgets/classic-widgets.php               ][ON:true ]  Classic Widgets
+PLUGIN [SLUG:contact-form-7/wp-contact-form-7.php              ][ON:true ]  Contact Form 7
+PLUGIN [SLUG:duplicator/duplicator.php                         ][ON:true ]  Duplicator
+PLUGIN [SLUG:elementor/elementor.php                           ][ON:true ]  Elementor
+PLUGIN [SLUG:elementor-pro/elementor-pro.php                   ][ON:true ]  Elementor Pro
+PLUGIN [SLUG:post-duplicator/m4c-postduplicator.php            ][ON:true ]  Post Duplicator
+PLUGIN [SLUG:redux-framework/redux-framework.php               ][ON:true ]  Redux Framework
+PLUGIN [SLUG:woocommerce/woocommerce.php                       ][ON:true ]  WooCommerce
+PLUGIN [SLUG:RTL-CareUnit/RTL-CareUnit.php                     ][ON:true ]  افزونه مدیریت هوشمند راست چین
+PLUGIN [SLUG:persian-woocommerce/woocommerce-persian.php       ][ON:true ]  ووکامرس فارسی
+PLUGIN [SLUG:persian-woocommerce-sms/WoocommerceIR_SMS.php     ][ON:true ]  پیامک حرفه ای ووکامرس
+PLUGIN [SLUG:maintenance.php                                   ][ON:false]  maintenance.php
+
+********************************************************************************
+LOG-TIME[/home/h415102/public_html/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.18913]  MESSAGE:END RENDER PAGE
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+STEP ACTION: "on-validate"
+LOG-TIME[/home/h415102/public_html/dup-installer/ctrls/ctrl.base.php:227][DELTA:  10.08824]  MESSAGE:END RENDER PAGE
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Duplicator importer version" RESULT: skip
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Overwrite Install" RESULT: skip
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Recovery Point" RESULT: skip
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Package is Importable" RESULT: skip
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Package Size" [CLASS: DUPX_Validation_test_package_size]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Package Size" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00019]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00012]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+LOG-TIME[DELTA:   0.06047]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00216]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00021]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Tokenizer" [CLASS: DUPX_Validation_test_tokenizer]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Tokenizer" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.01742]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.17363]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00031]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.00040]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00343]  MESSAGE:TEST "Database Version" RESULT: soft warning
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00017]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00020]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WordPress Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00169]  MESSAGE:TEST "Multiple WordPress Installs" RESULT: passed
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+DB QUERY [ERROR][/home/h415102/public_html/dup-installer/classes/database/class.db.php:645] MSG: SELECT command denied to user 'h415102_mnbJKGHFOIqwmnxlsd'@'localhost' for table 'user'
+	SQL: SELECT max_questions, max_updates, max_connections FROM mysql.user WHERE user = 'h415102_mnbJKGHFOIqwmnxlsd' AND host = 'localhost'
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /home/h415102/public_html/dup-installer/classes/validation/class.validation.database.service.php[763]
+TRACE[2] CLASS___: DUPX_Validation_database_service->getUserResources FILE: /home/h415102/public_html/dup-installer/classes/validation/database-tests/class.validation.test.db.user.resources.php[28]
+TRACE[3] CLASS___: DUPX_Validation_test_db_user_resources->runTest FILE: /home/h415102/public_html/dup-installer/classes/validation/class.validation.abstract.item.php[46]
+TRACE[4] CLASS___: DUPX_Validation_abstract_item->test FILE: /home/h415102/public_html/dup-installer/classes/validation/class.validation.manager.php[232]
+TRACE[5] CLASS___: DUPX_Validation_manager->runTests FILE: /home/h415102/public_html/dup-installer/classes/validation/class.validation.manager.php[205]
+TRACE[6] CLASS___: DUPX_Validation_manager->getValidateData FILE: /home/h415102/public_html/dup-installer/ctrls/classes/class.ctrl.ajax.php[173]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /home/h415102/public_html/dup-installer/ctrls/classes/class.ctrl.ajax.php[95]
+TRACE[8] CLASS___: DUPX_Ctrl_ajax::controller FILE: /home/h415102/public_html/dup-installer/main.installer.php[60]
+
+LOG-TIME[DELTA:   0.00017]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.02956]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00202]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00355]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00006]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: passed
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00188]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: passed
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00144]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: passed
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00013]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+
+CTRL PARAMS AFTER VALIDATION
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [proceed_confirm_dialog] START
+AJAX ACTION [proceed_confirm_dialog] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+INITIALIZE FILTERS
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+********************************************************************************
+* DUPLICATOR LITE: Install-Log
+* STEP-1 START @ 09:34:19
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+INSTALL TYPE________: single site
+BLOG NAME___________: "دکتر پلاس"
+HOME URL NEW________: "https://visital.ir"
+SITE URL NEW________: "https://visital.ir"
+CONTENT URL NEW_____: "https://visital.ir/wp-content"
+UPLOAD URL NEW______: "https://visital.ir/wp-content/uploads"
+PLUGINS URL NEW_____: "https://visital.ir/wp-content/plugins"
+MUPLUGINS URL NEW___: "https://visital.ir/wp-content/mu-plugins"
+HOME PATH NEW_______: "/home/h415102/public_html"
+SITE PATH NEW_______: "/home/h415102/public_html"
+CONTENT PATH NEW____: "/home/h415102/public_html/wp-content"
+UPLOAD PATH NEW_____: "/home/h415102/public_html/wp-content/uploads"
+PLUGINS PATH NEW____: "/home/h415102/public_html/wp-content/plugins"
+MUPLUGINS PATH NEW__: "/home/h415102/public_html/wp-content/mu-plugins"
+ARCHIVE ACTION______: "donothing"
+SKIP WP FILES_______: "none"
+ARCHIVE ENGINE______: "ziparchivechunking"
+SET DIR PERMS_______: true
+DIR PERMS VALUE_____: 0755
+SET FILE PERMS______: true
+FILE PERMS VALUE____: 0644
+SAFE MODE___________: 0
+LOGGING_____________: 1
+ZIP THROTTLING______: false
+WP CONFIG___________: "modify"
+HTACCESS CONFIG_____: "new"
+OTHER CONFIG________: "new"
+FILE TIME___________: "current"
+********************************************************************************
+
+REMOVE FILTERS
+	DIR : "/home/h415102/public_html/dup-installer"
+	FILE: "/home/h415102/public_html/20251226_d8afdaa9d8aad8b1d9bed984d8a7d8_[HASH]_20260816160440_installer-backup.php"
+	FILE: "/home/h415102/public_html/20251226_d8afdaa9d8aad8b1d9bed984d8a7d8_[HASH]_20260816160440_archive.zip"
+	FILE: "/home/h415102/public_html/installer.php"
+	FILE: "/home/h415102/public_html/dup-installer-bootlog__b144452-16160440.txt"
+EXTRACTION FILTERS
+	DIR : "dup-installer"
+	FILE: "20251226_d8afdaa9d8aad8b1d9bed984d8a7d8_[HASH]_20260816160440_installer-backup.php"
+--------------------------------------
+
+
+EXTRACTION: ZIP CHUNKING >>> START
+MAINTENANCE MODE ENABLE
+BEFORE EXTRACION ACTIONS
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> START
+RESET CONFIG FILES: I'M GOING TO MOVE CONFIG FILE ".htaccess" IN ORIGINAL FOLDER
+	CONFIG FILE HAS BEEN RESET
+
+*** RESET CONFIG FILES IN CURRENT HOSTING >>> END
+MAINTENANCE MODE ENABLE
+
+*** CREATE FOLDER AND PERMISSION PREPARE
+FOLDER PREPARE DONE
+ARCHIVE OFFSET 0
+CHUNK COMPLETE - RUNTIME: 5.0732 sec. - Files processed: 4,757 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 4757
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0441 sec. - Files processed: 7,943 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 7943
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0094 sec. - Files processed: 10,522 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 10522
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0064 sec. - Files processed: 11,475 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 11475
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0063 sec. - Files processed: 15,940 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 15940
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0150 sec. - Files processed: 20,536 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 20536
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0402 sec. - Files processed: 22,492 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 22492
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.1559 sec. - Files processed: 24,434 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+MAINTENANCE MODE ENABLE
+ARCHIVE OFFSET 24434
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+FILE EXTRACTION: done processing last file in list of 25718
+
+EXTRACTION: ZIP CHUNKING >>> DONE
+
+EXTRACTION COMPLETE @ 09:35:26 - RUNTIME: 67.4878 sec. - Files processed: 25,112 of 25,112
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [dbinstall] START
+ADD PREFIX META MAP ID 0 Dj3i_
+
+
+
+********************************************************************************
+* DUPLICATOR LITE: INSTALL-LOG
+* STEP-2 START @ 09:35:26
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+DB ENGINE___________: "chunk"
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+USER MODE___________: "overwrite"
+TABLE PREFIX________: "Dj3i_"
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8mb4"
+COLLATE_____________: "utf8mb4_general_ci"
+CUNKING_____________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTIONS___________: true
+REMOVE DEFINER______: false
+SPLIT CREATES_______: true
+--------------------------------------
+TABLES
+--------------------------------------
+TABLE "Dj3i_actionscheduler_actions"____________________[ROWS:     133] [EXTRACT|REPLACE] [INST NAME: Dj3i_actionscheduler_actions]
+TABLE "Dj3i_actionscheduler_claims"_____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_actionscheduler_claims]
+TABLE "Dj3i_actionscheduler_groups"_____________________[ROWS:      10] [EXTRACT|REPLACE] [INST NAME: Dj3i_actionscheduler_groups]
+TABLE "Dj3i_actionscheduler_logs"_______________________[ROWS:     371] [EXTRACT|REPLACE] [INST NAME: Dj3i_actionscheduler_logs]
+TABLE "Dj3i_commentmeta"________________________________[ROWS:       7] [EXTRACT|REPLACE] [INST NAME: Dj3i_commentmeta]
+TABLE "Dj3i_comments"___________________________________[ROWS:       8] [EXTRACT|REPLACE] [INST NAME: Dj3i_comments]
+TABLE "Dj3i_drplus_booking"_____________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_booking]
+TABLE "Dj3i_drplus_chat_sessions"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_chat_sessions]
+TABLE "Dj3i_drplus_notifications_user_rel"______________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_notifications_user_rel]
+TABLE "Dj3i_drplus_otp"_________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_otp]
+TABLE "Dj3i_drplus_reminder_log"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_reminder_log]
+TABLE "Dj3i_drplus_specialists"_________________________[ROWS:      13] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_specialists]
+TABLE "Dj3i_drplus_specialists_statics"_________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_specialists_statics]
+TABLE "Dj3i_drplus_specialist_cache"____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_specialist_cache]
+TABLE "Dj3i_drplus_specialist_hospitals_rel"____________[ROWS:      16] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_specialist_hospitals_rel]
+TABLE "Dj3i_drplus_specialist_insurances_rel"___________[ROWS:      80] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_specialist_insurances_rel]
+TABLE "Dj3i_drplus_specialist_speciality_rel"___________[ROWS:     130] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_specialist_speciality_rel]
+TABLE "Dj3i_drplus_times"_______________________________[ROWS:     237] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_times]
+TABLE "Dj3i_drplus_wishlist"____________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_drplus_wishlist]
+TABLE "Dj3i_duplicator_packages"________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_duplicator_packages]
+TABLE "Dj3i_e_events"___________________________________[ROWS:       8] [EXTRACT|REPLACE] [INST NAME: Dj3i_e_events]
+TABLE "Dj3i_e_notes"____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_e_notes]
+TABLE "Dj3i_e_notes_users_relations"____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_e_notes_users_relations]
+TABLE "Dj3i_e_submissions"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_e_submissions]
+TABLE "Dj3i_e_submissions_actions_log"__________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_e_submissions_actions_log]
+TABLE "Dj3i_e_submissions_values"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_e_submissions_values]
+TABLE "Dj3i_links"______________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_links]
+TABLE "Dj3i_options"____________________________________[ROWS:     668] [EXTRACT|REPLACE] [INST NAME: Dj3i_options]
+TABLE "Dj3i_postmeta"___________________________________[ROWS:    2241] [EXTRACT|REPLACE] [INST NAME: Dj3i_postmeta]
+TABLE "Dj3i_posts"______________________________________[ROWS:     285] [EXTRACT|REPLACE] [INST NAME: Dj3i_posts]
+TABLE "Dj3i_rtl_rsm_logs"_______________________________[ROWS:     289] [EXTRACT|REPLACE] [INST NAME: Dj3i_rtl_rsm_logs]
+TABLE "Dj3i_sheyda_wallet_balances"_____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_sheyda_wallet_balances]
+TABLE "Dj3i_sheyda_wallet_ledger"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_sheyda_wallet_ledger]
+TABLE "Dj3i_sheyda_wallet_withdrawals"__________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_sheyda_wallet_withdrawals]
+TABLE "Dj3i_termmeta"___________________________________[ROWS:      84] [EXTRACT|REPLACE] [INST NAME: Dj3i_termmeta]
+TABLE "Dj3i_terms"______________________________________[ROWS:     132] [EXTRACT|REPLACE] [INST NAME: Dj3i_terms]
+TABLE "Dj3i_term_relationships"_________________________[ROWS:     611] [EXTRACT|REPLACE] [INST NAME: Dj3i_term_relationships]
+TABLE "Dj3i_term_taxonomy"______________________________[ROWS:     132] [EXTRACT|REPLACE] [INST NAME: Dj3i_term_taxonomy]
+TABLE "Dj3i_usermeta"___________________________________[ROWS:     380] [EXTRACT|REPLACE] [INST NAME: Dj3i_usermeta]
+TABLE "Dj3i_users"______________________________________[ROWS:      14] [EXTRACT|REPLACE] [INST NAME: Dj3i_users]
+TABLE "Dj3i_wc_admin_notes"_____________________________[ROWS:      62] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_admin_notes]
+TABLE "Dj3i_wc_admin_note_actions"______________________[ROWS:      91] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_admin_note_actions]
+TABLE "Dj3i_wc_category_lookup"_________________________[ROWS:      10] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_category_lookup]
+TABLE "Dj3i_wc_customer_lookup"_________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_customer_lookup]
+TABLE "Dj3i_wc_download_log"____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_download_log]
+TABLE "Dj3i_wc_email_unsubscribes"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_email_unsubscribes]
+TABLE "Dj3i_wc_orders"__________________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_orders]
+TABLE "Dj3i_wc_orders_meta"_____________________________[ROWS:      15] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_orders_meta]
+TABLE "Dj3i_wc_order_addresses"_________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_order_addresses]
+TABLE "Dj3i_wc_order_coupon_lookup"_____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_order_coupon_lookup]
+TABLE "Dj3i_wc_order_operational_data"__________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_order_operational_data]
+TABLE "Dj3i_wc_order_product_lookup"____________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_order_product_lookup]
+TABLE "Dj3i_wc_order_stats"_____________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_order_stats]
+TABLE "Dj3i_wc_order_tax_lookup"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_order_tax_lookup]
+TABLE "Dj3i_wc_product_attributes_lookup"_______________[ROWS:     148] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_product_attributes_lookup]
+TABLE "Dj3i_wc_product_download_directories"____________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_product_download_directories]
+TABLE "Dj3i_wc_product_meta_lookup"_____________________[ROWS:      37] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_product_meta_lookup]
+TABLE "Dj3i_wc_rate_limits"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_rate_limits]
+TABLE "Dj3i_wc_reserved_stock"__________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_reserved_stock]
+TABLE "Dj3i_wc_tax_rate_classes"________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_tax_rate_classes]
+TABLE "Dj3i_wc_webhooks"________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_wc_webhooks]
+TABLE "Dj3i_woocommerce_api_keys"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_api_keys]
+TABLE "Dj3i_woocommerce_attribute_taxonomies"___________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_attribute_taxonomies]
+TABLE "Dj3i_woocommerce_downloadable_product_permissions"[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_downloadable_product_permissions]
+TABLE "Dj3i_woocommerce_ir"_____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_ir]
+TABLE "Dj3i_woocommerce_ir_sms_archive"_________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_ir_sms_archive]
+TABLE "Dj3i_woocommerce_ir_sms_contacts"________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_ir_sms_contacts]
+TABLE "Dj3i_woocommerce_log"____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_log]
+TABLE "Dj3i_woocommerce_order_itemmeta"_________________[ROWS:      30] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_order_itemmeta]
+TABLE "Dj3i_woocommerce_order_items"____________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_order_items]
+TABLE "Dj3i_woocommerce_payment_tokenmeta"______________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_payment_tokenmeta]
+TABLE "Dj3i_woocommerce_payment_tokens"_________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_payment_tokens]
+TABLE "Dj3i_woocommerce_sessions"_______________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_sessions]
+TABLE "Dj3i_woocommerce_shipping_zones"_________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_shipping_zones]
+TABLE "Dj3i_woocommerce_shipping_zone_locations"________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_shipping_zone_locations]
+TABLE "Dj3i_woocommerce_shipping_zone_methods"__________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_shipping_zone_methods]
+TABLE "Dj3i_woocommerce_tax_rates"______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_tax_rates]
+TABLE "Dj3i_woocommerce_tax_rate_locations"_____________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: Dj3i_woocommerce_tax_rate_locations]
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 8.0.46 -- Build Server: 10.11.14
+FILE SIZE:	dup-database__[HASH].sql (2.34MB)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE-GLOBAL:	
+SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
+DROP ALL TABLES
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+QUERY FIXES
+GLOBAL RULES ADDED: PROC AND VIEWS
+
+QUERY FIXES GLOBAL RULES
+	SEARCH  => /^(\s*(?:\/\*!\d+\s)?\s*(?:CREATE.+)?DEFINER\s*=)([^\*\s]+)(.*)$/m
+	REPLACE => $1`h415102_mnbJKGHFOIqwmnxlsd`@`localhost`$3
+
+	SEARCH  => /^(\s*CREATE.+(?:PROCEDURE|FUNCTION)[\s\S]*)(BEGIN)([\s\S]*)$/
+	REPLACE => $1SQL SECURITY INVOKER
+$2$3
+
+--------------------------------------
+** DATABASE CHUNK install start
+--------------------------------------
+DATABASE CHUNK SEEK POSITION: 0
+Auto Commit set to false successfully
+NO TABLE TO SKIP
+Auto Commit set to true successfully
+--------------------------------------
+** DATABASE CHUNK install end
+--------------------------------------
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	679
+
+TABLES ROWS IN DATABASE AFTER EXTRACTION
+
+TABLE "Dj3i_actionscheduler_actions"____________________[ROWS:   133]
+TABLE "Dj3i_actionscheduler_claims"_____________________[ROWS:     0]
+TABLE "Dj3i_actionscheduler_groups"_____________________[ROWS:    10]
+TABLE "Dj3i_actionscheduler_logs"_______________________[ROWS:   369]
+TABLE "Dj3i_commentmeta"________________________________[ROWS:     7]
+TABLE "Dj3i_comments"___________________________________[ROWS:     8]
+TABLE "Dj3i_drplus_booking"_____________________________[ROWS:     3]
+TABLE "Dj3i_drplus_chat_sessions"_______________________[ROWS:     0]
+TABLE "Dj3i_drplus_notifications_user_rel"______________[ROWS:     0]
+TABLE "Dj3i_drplus_otp"_________________________________[ROWS:     0]
+TABLE "Dj3i_drplus_reminder_log"________________________[ROWS:     0]
+TABLE "Dj3i_drplus_specialist_cache"____________________[ROWS:     0]
+TABLE "Dj3i_drplus_specialist_hospitals_rel"____________[ROWS:    16]
+TABLE "Dj3i_drplus_specialist_insurances_rel"___________[ROWS:    80]
+TABLE "Dj3i_drplus_specialist_speciality_rel"___________[ROWS:   130]
+TABLE "Dj3i_drplus_specialists"_________________________[ROWS:    13]
+TABLE "Dj3i_drplus_specialists_statics"_________________[ROWS:     0]
+TABLE "Dj3i_drplus_times"_______________________________[ROWS:   237]
+TABLE "Dj3i_drplus_wishlist"____________________________[ROWS:     1]
+TABLE "Dj3i_duplicator_packages"________________________[ROWS:     1]
+TABLE "Dj3i_e_events"___________________________________[ROWS:     8]
+TABLE "Dj3i_e_notes"____________________________________[ROWS:     0]
+TABLE "Dj3i_e_notes_users_relations"____________________[ROWS:     0]
+TABLE "Dj3i_e_submissions"______________________________[ROWS:     0]
+TABLE "Dj3i_e_submissions_actions_log"__________________[ROWS:     0]
+TABLE "Dj3i_e_submissions_values"_______________________[ROWS:     0]
+TABLE "Dj3i_links"______________________________________[ROWS:     0]
+TABLE "Dj3i_options"____________________________________[ROWS:   668]
+TABLE "Dj3i_postmeta"___________________________________[ROWS:  2241]
+TABLE "Dj3i_posts"______________________________________[ROWS:   285]
+TABLE "Dj3i_rtl_rsm_logs"_______________________________[ROWS:   289]
+TABLE "Dj3i_sheyda_wallet_balances"_____________________[ROWS:     0]
+TABLE "Dj3i_sheyda_wallet_ledger"_______________________[ROWS:     0]
+TABLE "Dj3i_sheyda_wallet_withdrawals"__________________[ROWS:     0]
+TABLE "Dj3i_term_relationships"_________________________[ROWS:   611]
+TABLE "Dj3i_term_taxonomy"______________________________[ROWS:   132]
+TABLE "Dj3i_termmeta"___________________________________[ROWS:    84]
+TABLE "Dj3i_terms"______________________________________[ROWS:   132]
+TABLE "Dj3i_usermeta"___________________________________[ROWS:   380]
+TABLE "Dj3i_users"______________________________________[ROWS:    14]
+TABLE "Dj3i_wc_admin_note_actions"______________________[ROWS:    91]
+TABLE "Dj3i_wc_admin_notes"_____________________________[ROWS:    62]
+TABLE "Dj3i_wc_category_lookup"_________________________[ROWS:    10]
+TABLE "Dj3i_wc_customer_lookup"_________________________[ROWS:     0]
+TABLE "Dj3i_wc_download_log"____________________________[ROWS:     0]
+TABLE "Dj3i_wc_email_unsubscribes"______________________[ROWS:     0]
+TABLE "Dj3i_wc_order_addresses"_________________________[ROWS:     1]
+TABLE "Dj3i_wc_order_coupon_lookup"_____________________[ROWS:     0]
+TABLE "Dj3i_wc_order_operational_data"__________________[ROWS:     1]
+TABLE "Dj3i_wc_order_product_lookup"____________________[ROWS:     1]
+TABLE "Dj3i_wc_order_stats"_____________________________[ROWS:     1]
+TABLE "Dj3i_wc_order_tax_lookup"________________________[ROWS:     0]
+TABLE "Dj3i_wc_orders"__________________________________[ROWS:     1]
+TABLE "Dj3i_wc_orders_meta"_____________________________[ROWS:    15]
+TABLE "Dj3i_wc_product_attributes_lookup"_______________[ROWS:   148]
+TABLE "Dj3i_wc_product_download_directories"____________[ROWS:     2]
+TABLE "Dj3i_wc_product_meta_lookup"_____________________[ROWS:    37]
+TABLE "Dj3i_wc_rate_limits"_____________________________[ROWS:     0]
+TABLE "Dj3i_wc_reserved_stock"__________________________[ROWS:     0]
+TABLE "Dj3i_wc_tax_rate_classes"________________________[ROWS:     2]
+TABLE "Dj3i_wc_webhooks"________________________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_api_keys"_______________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_attribute_taxonomies"___________[ROWS:     5]
+TABLE "Dj3i_woocommerce_downloadable_product_permissions"[ROWS:     0]
+TABLE "Dj3i_woocommerce_ir"_____________________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_ir_sms_archive"_________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_ir_sms_contacts"________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_log"____________________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_order_itemmeta"_________________[ROWS:    30]
+TABLE "Dj3i_woocommerce_order_items"____________________[ROWS:     2]
+TABLE "Dj3i_woocommerce_payment_tokenmeta"______________[ROWS:     0]
+TABLE "Dj3i_woocommerce_payment_tokens"_________________[ROWS:     0]
+TABLE "Dj3i_woocommerce_sessions"_______________________[ROWS:     1]
+TABLE "Dj3i_woocommerce_shipping_zone_locations"________[ROWS:     1]
+TABLE "Dj3i_woocommerce_shipping_zone_methods"__________[ROWS:     1]
+TABLE "Dj3i_woocommerce_shipping_zones"_________________[ROWS:     1]
+TABLE "Dj3i_woocommerce_tax_rate_locations"_____________[ROWS:     0]
+TABLE "Dj3i_woocommerce_tax_rates"______________________[ROWS:     0]
+
+INSERT DATA RUNTIME: 0.9740 sec.
+STEP-2 COMPLETE @ 09:35:27 - RUNTIME: 0.9740 sec.
+AJAX ACTION [dbinstall] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+
+====================================
+SET SEARCH AND REPLACE LIST INSTALL TYPE single site
+====================================
+SEARCH ITEM[T:path |P:12] SEARCH: /var/www/html/drplus-demo REPLACE: /home/h415102/public_html [SCOPE: ALL]
+SEARCH ITEM[T:urlnd|P:12] SEARCH: http://localhost/drplus-demo REPLACE: https://visital.ir [SCOPE: ALL]
+CHUNK LOAD DATA: IS NULL 
+CHUNK ACTION: CURRENT [start][][]
+
+
+********************************************************************************
+DUPLICATOR LITE: INSTALL-LOG
+STEP-3 START @ 09:35:27
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8mb4"
+CHARSET CLIENT:	"utf8mb4"
+********************************************************************************
+OPTIONS:
+SKIP PATH REPLACE_____: false
+DISALLOW_FILE_EDIT____: [value = ], [inWpConfig = ]
+DISALLOW_FILE_MODS____: [value = ], [inWpConfig = ]
+AUTOSAVE_INTERVAL_____: [value = 60], [inWpConfig = ]
+WP_POST_REVISIONS_____: [value = 1], [inWpConfig = ]
+FORCE_SSL_ADMIN_______: [value = ], [inWpConfig = ]
+WP_AUTO_UPDATE_CORE___: [value = false], [inWpConfig = ]
+WP_CACHE______________: [value = ], [inWpConfig = ]
+WPCACHEHOME___________: [value = /], [inWpConfig = ]
+WP_DEBUG______________: [value = ], [inWpConfig = 1]
+WP_DEBUG_LOG__________: [value = ], [inWpConfig = 1]
+WP_DEBUG_DISPLAY______: [value = 1], [inWpConfig = ]
+WP_DISABLE_FATAL_ERROR_HANDLER: [value = ], [inWpConfig = ]
+SCRIPT_DEBUG__________: [value = ], [inWpConfig = ]
+CONCATENATE_SCRIPTS___: [value = ], [inWpConfig = ]
+SAVEQUERIES___________: [value = ], [inWpConfig = ]
+ALTERNATE_WP_CRON_____: [value = ], [inWpConfig = ]
+DISABLE_WP_CRON_______: [value = ], [inWpConfig = ]
+WP_CRON_LOCK_TIMEOUT__: [value = 60], [inWpConfig = ]
+COOKIE_DOMAIN_________: [value = ], [inWpConfig = ]
+WP_MEMORY_LIMIT_______: [value = 40M], [inWpConfig = ]
+WP_MAX_MEMORY_LIMIT___: [value = 2048M], [inWpConfig = ]
+WP_TEMP_DIR___________: [value = ], [inWpConfig = ]
+********************************************************************************
+
+********************************************************************************
+CHUNK PARAMS:
+maxIteration__________: 0
+timeOut_______________: 5000
+throttling____________: 2
+rowsPerPage___________: 1000
+********************************************************************************
+
+CHUNK ACTION: CURRENT [cleanup_trans][][]
+[PHP ERR][E_WARNING] MSG:foreach() argument must be of type array|object, string given [CODE:2|FILE:/home/h415102/public_html/dup-installer/src/Core/Deploy/Database/DbCleanup.php|LINE:95]
+CLEAN OPTIONS [Dj3i_options]
+	`option_name` = "duplicator_plugin_data_stats"
+	`option_name` LIKE "\_transient%"
+	`option_name` LIKE "\_site\_transient%"
+DATABASE OPTIONS DELETED [ROWS:    93]
+CHUNK ACTION: CURRENT [cleanup_extra][][]
+CLEANUP EXTRA
+	- SKIP DROP VIEWS
+	- SKIP DROP PROCS
+	- SKIP DROP FUNCS
+CHUNK ACTION: CURRENT [cleanup_packages][][]
+EMPTY PACKAGES TABLE
+CLEAN PACKAGES
+DATABASE PACKAGE DELETED [ROWS:     1]
+CHUNK ACTION: CURRENT [init][][]
+
+EVALUATE TABLE: "Dj3i_actionscheduler_actions"____________________[ROWS:   133][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_actionscheduler_actions][0]
+
+EVALUATE TABLE: "Dj3i_actionscheduler_claims"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_actionscheduler_groups"_____________________[ROWS:    10][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_actionscheduler_groups][0]
+
+EVALUATE TABLE: "Dj3i_actionscheduler_logs"_______________________[ROWS:   369][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_actionscheduler_logs][0]
+
+EVALUATE TABLE: "Dj3i_commentmeta"________________________________[ROWS:     7][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_commentmeta][0]
+
+EVALUATE TABLE: "Dj3i_comments"___________________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_comments][0]
+
+EVALUATE TABLE: "Dj3i_drplus_booking"_____________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_drplus_booking][0]
+
+EVALUATE TABLE: "Dj3i_drplus_chat_sessions"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_notifications_user_rel"______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_otp"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_reminder_log"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_specialists"_________________________[ROWS:    13][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_drplus_specialists][0]
+
+EVALUATE TABLE: "Dj3i_drplus_specialists_statics"_________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_specialist_cache"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_specialist_hospitals_rel"____________[ROWS:    16][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_specialist_insurances_rel"___________[ROWS:    80][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_specialist_speciality_rel"___________[ROWS:   130][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_drplus_times"_______________________________[ROWS:   237][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_drplus_times][0]
+
+EVALUATE TABLE: "Dj3i_drplus_wishlist"____________________________[ROWS:     1][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_duplicator_packages"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_e_events"___________________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_e_events][0]
+
+EVALUATE TABLE: "Dj3i_e_notes"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_e_notes_users_relations"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_e_submissions"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_e_submissions_actions_log"__________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_e_submissions_values"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_links"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_options"____________________________________[ROWS:   575][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_options][0]
+
+EVALUATE TABLE: "Dj3i_postmeta"___________________________________[ROWS:  2241][PG:   3][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_postmeta][0]
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_postmeta][1]
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_postmeta][2]
+
+EVALUATE TABLE: "Dj3i_posts"______________________________________[ROWS:   285][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_posts][0]
+
+EVALUATE TABLE: "Dj3i_rtl_rsm_logs"_______________________________[ROWS:   289][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_rtl_rsm_logs][0]
+
+EVALUATE TABLE: "Dj3i_sheyda_wallet_balances"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_sheyda_wallet_ledger"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_sheyda_wallet_withdrawals"__________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_termmeta"___________________________________[ROWS:    84][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_termmeta][0]
+
+EVALUATE TABLE: "Dj3i_terms"______________________________________[ROWS:   132][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_terms][0]
+
+EVALUATE TABLE: "Dj3i_term_relationships"_________________________[ROWS:   611][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_term_taxonomy"______________________________[ROWS:   132][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_term_taxonomy][0]
+
+EVALUATE TABLE: "Dj3i_usermeta"___________________________________[ROWS:   380][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_usermeta][0]
+
+EVALUATE TABLE: "Dj3i_users"______________________________________[ROWS:    14][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_users][0]
+
+EVALUATE TABLE: "Dj3i_wc_admin_notes"_____________________________[ROWS:    62][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_admin_notes][0]
+
+EVALUATE TABLE: "Dj3i_wc_admin_note_actions"______________________[ROWS:    91][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_admin_note_actions][0]
+
+EVALUATE TABLE: "Dj3i_wc_category_lookup"_________________________[ROWS:    10][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_customer_lookup"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_download_log"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_email_unsubscribes"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_orders"__________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_orders][0]
+
+EVALUATE TABLE: "Dj3i_wc_orders_meta"_____________________________[ROWS:    15][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_orders_meta][0]
+
+EVALUATE TABLE: "Dj3i_wc_order_addresses"_________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_order_addresses][0]
+
+EVALUATE TABLE: "Dj3i_wc_order_coupon_lookup"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_order_operational_data"__________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_order_operational_data][0]
+
+EVALUATE TABLE: "Dj3i_wc_order_product_lookup"____________________[ROWS:     1][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_order_stats"_____________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_order_stats][0]
+
+EVALUATE TABLE: "Dj3i_wc_order_tax_lookup"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_product_attributes_lookup"_______________[ROWS:   148][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_product_attributes_lookup][0]
+
+EVALUATE TABLE: "Dj3i_wc_product_download_directories"____________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_product_download_directories][0]
+
+EVALUATE TABLE: "Dj3i_wc_product_meta_lookup"_____________________[ROWS:    37][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_product_meta_lookup][0]
+
+EVALUATE TABLE: "Dj3i_wc_rate_limits"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_reserved_stock"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_wc_tax_rate_classes"________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_wc_tax_rate_classes][0]
+
+EVALUATE TABLE: "Dj3i_wc_webhooks"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_api_keys"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_attribute_taxonomies"___________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_attribute_taxonomies][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_downloadable_product_permissions"[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_ir"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_ir_sms_archive"_________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_ir_sms_contacts"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_log"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_order_itemmeta"_________________[ROWS:    30][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_order_itemmeta][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_order_items"____________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_order_items][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_payment_tokenmeta"______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_payment_tokens"_________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_sessions"_______________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_sessions][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_shipping_zones"_________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_shipping_zones][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_shipping_zone_locations"________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_shipping_zone_locations][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_shipping_zone_methods"__________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	SEARCH[path ]  1:"/var/www/html/drplus-demo" =======================> "/home/h415102/public_html"
+	SEARCH[urlnd]  2:"http://localhost/drplus-demo" ====================> "https://visital.ir"
+	CHUNK ACTION: CURRENT [search_replace][Dj3i_woocommerce_shipping_zone_methods][0]
+
+EVALUATE TABLE: "Dj3i_woocommerce_tax_rates"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "Dj3i_woocommerce_tax_rate_locations"_____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+--------------------------------------
+SCANNED:	Tables:78 	|	 Rows:5322 	|	 Cells:32977 
+UPDATED:	Tables:10 	|	 Rows:364 	|	 Cells:375 
+ERRORS:		0 
+RUNTIME:	0.535700 sec
+CHUNK ACTION: CURRENT [rem_maintenance][][]
+
+====================================
+REMOVE MAINTENANCE MODE
+====================================
+MAINTENANCE MODE DISABLE
+CHUNK ACTION: CURRENT [config_update][][]
+SET CONFIG FILES
+Retained original entry wpconfig target:/home/h415102/public_html/wp-config.php
+New htaccess file created:/home/h415102/public_html/.htaccess
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE ABSPATH "__DIR__ . '/'"
+	UPDATE DB_NAME ""h415102_mnjkoiyFgBJKmnBHGFoiwth""
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE DB_CHARSET "utf8mb4"
+	UPDATE DB_COLLATE "utf8mb4_general_ci"
+	WP CONFIG UPDATE WP_DEBUG "false"
+	WP CONFIG UPDATE WP_DEBUG_LOG "false"
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE
+====================================
+
+WEB SERVER CONFIGURATION FILE UPDATED:
+- Preparing .htaccess file with basic setup.
+HTACCESS FILE - Successfully updated the .htaccess file setting.
+
+====================================
+INDEX.PHP UPDATE
+====================================
+INDEX.PHP updated with new blog header "__DIR__ . '/wp-blog-header.php'"
+
+CHUNK ACTION: CURRENT [gen_update][][]
+
+====================================
+GENERAL UPDATES
+====================================
+
+====================================
+MANAGE PLUGINS
+====================================
+CHUNK ACTION: CURRENT [gen_clean][][]
+
+====================================
+GENERAL CLEANUP
+====================================
+RESET ALL USERS SESSION TOKENS
+MIGRATION INFO SET
+CHUNK ACTION: CURRENT [create_admin][][]
+
+====================================
+RESET USERS PASSWORD
+====================================
+CHUNK ACTION: CURRENT [notice_test][][]
+
+====================================
+CHECK FOR INDEX.HTML
+====================================
+NO INDEX.HTML WAS FOUND
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+CHUNK ACTION: CURRENT [cleanup_tmp_files][][]
+
+====================================
+CLEANUP TMP FILES
+====================================
+CHUNK ACTION: CURRENT [set_files_perms][][]
+
+====================================
+SET PARAMS PERMISSION
+====================================
+
+*** SET FOLDER PERMISSION AFTER EXTRACTION
+--------------------------------------
+PATHS MAPPING : "/home/h415102/public_html"
+--------------------------------------
+SET FOLDER PERMISSION DONE
+CHUNK ACTION: CURRENT [final_report][][]
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 09:35:29 - RUNTIME: 1.6164 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalpre] START
+AJAX ACTION [finalpre] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+-------------------------
+AJAX ACTION [finalafter] START
+AJAX ACTION [finalafter] SUCCESS
+-------------------------
+
+LOG-TIME[/home/h415102/public_html/dup-installer/src/Core/Bootstrap.php:71] RESET TIME
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+====================================
+LOG-TIME[/home/h415102/public_html/dup-installer/ctrls/ctrl.base.php:227][DELTA:   0.02386]  MESSAGE:END RENDER PAGE

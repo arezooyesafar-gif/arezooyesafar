@@ -1,0 +1,1068 @@
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: Yes
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 12, 12
+
+
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 0, 12
+
+
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 0, 12
+
+
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 0, 12
+
+
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 0, 12
+
+
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/page/2/
+Paged: 2
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (23862,24705,39434,39444,39752,39756,39815,47390,69341,69840,75910,97724) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,39444,47390,69341,75910,69840,39752,97724,23862,24705,39815,39434,39756)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /?s=&city=tehran
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts  LEFT JOIN Dj3i_term_relationships ON (Dj3i_posts.ID = Dj3i_term_relationships.object_id)  LEFT JOIN Dj3i_term_relationships AS tt1 ON (Dj3i_posts.ID = tt1.object_id)
+					 WHERE 1=1  AND ( 
+  Dj3i_posts.ID NOT IN (
+				SELECT object_id
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (6)
+			) 
+  AND 
+  Dj3i_term_relationships.term_taxonomy_id IN (312) 
+  AND 
+  tt1.term_taxonomy_id IN (312)
+) AND ((Dj3i_posts.post_type = 'hospital' AND (Dj3i_posts.post_status = 'publish')) OR (Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')) OR (Dj3i_posts.post_type = 'product' AND (Dj3i_posts.post_status = 'publish')))
+					 GROUP BY Dj3i_posts.ID
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /?s=&city=ardabil
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts  LEFT JOIN Dj3i_term_relationships ON (Dj3i_posts.ID = Dj3i_term_relationships.object_id)  LEFT JOIN Dj3i_term_relationships AS tt1 ON (Dj3i_posts.ID = tt1.object_id)
+					 WHERE 1=1  AND ( 
+  Dj3i_posts.ID NOT IN (
+				SELECT object_id
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (6)
+			) 
+  AND 
+  Dj3i_term_relationships.term_taxonomy_id IN (311) 
+  AND 
+  tt1.term_taxonomy_id IN (311)
+) AND ((Dj3i_posts.post_type = 'hospital' AND (Dj3i_posts.post_status = 'publish')) OR (Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')) OR (Dj3i_posts.post_type = 'product' AND (Dj3i_posts.post_status = 'publish')))
+					 GROUP BY Dj3i_posts.ID
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /?s=&city=ardabil
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts  LEFT JOIN Dj3i_term_relationships ON (Dj3i_posts.ID = Dj3i_term_relationships.object_id)  LEFT JOIN Dj3i_term_relationships AS tt1 ON (Dj3i_posts.ID = tt1.object_id)
+					 WHERE 1=1  AND ( 
+  Dj3i_posts.ID NOT IN (
+				SELECT object_id
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (6)
+			) 
+  AND 
+  Dj3i_term_relationships.term_taxonomy_id IN (311) 
+  AND 
+  tt1.term_taxonomy_id IN (311)
+) AND ((Dj3i_posts.post_type = 'hospital' AND (Dj3i_posts.post_status = 'publish')) OR (Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')) OR (Dj3i_posts.post_type = 'product' AND (Dj3i_posts.post_status = 'publish')))
+					 GROUP BY Dj3i_posts.ID
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /specialist/doctoreto-gxarnm/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: Yes
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = 'doctoreto-gxarnm' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /robots.txt
+Paged: 0
+Found Posts: 12
+Max Num Pages: 1
+Post Count: 12
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND ((Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /sitemap.xml
+Paged: 0
+Found Posts: 12
+Max Num Pages: 1
+Post Count: 12
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND ((Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /wp-sitemap.xml
+Paged: 0
+Found Posts: 12
+Max Num Pages: 1
+Post Count: 12
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND ((Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /?p=6950
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: Yes
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 6950 AND Dj3i_posts.post_type = 'post'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /specialist/%d8%af%da%a9%d8%aa%d8%b1-%d9%88%db%8c%d8%af%d8%a7-%db%8c%d9%88%d8%b3%d9%81%db%8c%d8%a7%d9%86/
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = '%d8%af%da%a9%d8%aa%d8%b1-%d9%88%db%8c%d8%af%d8%a7-%db%8c%d9%88%d8%b3%d9%81%db%8c%d8%a7%d9%86' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /?p=6950
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: Yes
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 6950 AND Dj3i_posts.post_type = 'post'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /specialist/%d8%af%da%a9%d8%aa%d8%b1-%d9%88%db%8c%d8%af%d8%a7-%db%8c%d9%88%d8%b3%d9%81%db%8c%d8%a7%d9%86/
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = '%d8%af%da%a9%d8%aa%d8%b1-%d9%88%db%8c%d8%af%d8%a7-%db%8c%d9%88%d8%b3%d9%81%db%8c%d8%a7%d9%86' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /specialist/%D9%81%D8%B1%D9%86%D8%A7%D8%B2-%D8%A7%D8%B3%D8%AF%D9%84%D9%88/
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = '%d9%81%d8%b1%d9%86%d8%a7%d8%b2-%d8%a7%d8%b3%d8%af%d9%84%d9%88' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /product-tag/%D8%B3%D8%A7%D8%B9%D8%AA/?filter_color=%D8%B3%D9%81%DB%8C%D8%AF
+Paged: 0
+Found Posts: 2
+Max Num Pages: 1
+Post Count: 2
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts  LEFT JOIN Dj3i_term_relationships ON (Dj3i_posts.ID = Dj3i_term_relationships.object_id)
+					 WHERE 1=1  AND ( 
+  (
+				SELECT COUNT(1)
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (68)
+				AND object_id = Dj3i_posts.ID
+			) = 1 
+  AND 
+  Dj3i_posts.ID NOT IN (
+				SELECT object_id
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (7)
+			) 
+  AND 
+  Dj3i_term_relationships.term_taxonomy_id IN (72)
+) AND ((Dj3i_posts.post_type = 'product' AND (Dj3i_posts.post_status = 'publish')))
+					 GROUP BY Dj3i_posts.ID
+					 ORDER BY Dj3i_posts.menu_order ASC, Dj3i_posts.post_title ASC
+					 LIMIT 0, 12
+
+
+URL: /product-tag/%D8%B3%D8%A7%D8%B9%D8%AA/?filter_color=%D9%85%D8%B4%DA%A9%DB%8C
+Paged: 0
+Found Posts: 2
+Max Num Pages: 1
+Post Count: 2
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts  LEFT JOIN Dj3i_term_relationships ON (Dj3i_posts.ID = Dj3i_term_relationships.object_id)
+					 WHERE 1=1  AND ( 
+  (
+				SELECT COUNT(1)
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (69)
+				AND object_id = Dj3i_posts.ID
+			) = 1 
+  AND 
+  Dj3i_posts.ID NOT IN (
+				SELECT object_id
+				FROM Dj3i_term_relationships
+				WHERE term_taxonomy_id IN (7)
+			) 
+  AND 
+  Dj3i_term_relationships.term_taxonomy_id IN (72)
+) AND ((Dj3i_posts.post_type = 'product' AND (Dj3i_posts.post_status = 'publish')))
+					 GROUP BY Dj3i_posts.ID
+					 ORDER BY Dj3i_posts.menu_order ASC, Dj3i_posts.post_title ASC
+					 LIMIT 0, 12
+
+
+URL: /specialist/%D8%B3%D9%88%D8%B3%D9%86-%D8%A8%D9%87%D8%B1%D8%A7%D9%85%DB%8C/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: Yes
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = '%d8%b3%d9%88%d8%b3%d9%86-%d8%a8%d9%87%d8%b1%d8%a7%d9%85%db%8c' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /feed/
+Paged: 0
+Found Posts: 12
+Max Num Pages: 2
+Post Count: 10
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND ((Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 10
+
+
+URL: /wp-sitemap-users-1.xml
+Paged: 1
+Found Posts: 12
+Max Num Pages: 1
+Post Count: 12
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND ((Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /?p=6950
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 0
+Is 404: Yes
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 6950 AND Dj3i_posts.post_type = 'post'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /specialist/%d8%af%da%a9%d8%aa%d8%b1-%d9%88%db%8c%d8%af%d8%a7-%db%8c%d9%88%d8%b3%d9%81%db%8c%d8%a7%d9%86/
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = '%d8%af%da%a9%d8%aa%d8%b1-%d9%88%db%8c%d8%af%d8%a7-%db%8c%d9%88%d8%b3%d9%81%db%8c%d8%a7%d9%86' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /blog/
+Paged: 0
+Found Posts: 12
+Max Num Pages: 1
+Post Count: 12
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT SQL_CALC_FOUND_ROWS  Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND ((Dj3i_posts.post_type = 'post' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 LIMIT 0, 12
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+
+URL: /specialist/%d8%af%da%a9%d8%aa%d8%b1-%d9%85%d8%ac%d8%aa%d8%a8%db%8c-%d8%b1%d9%85%d8%b6%d8%a7%d9%86%db%8c/
+Paged: 0
+Found Posts: 2
+Max Num Pages: 0
+Post Count: 2
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.post_name = '%d8%af%da%a9%d8%aa%d8%b1-%d9%85%d8%ac%d8%aa%d8%a8%db%8c-%d8%b1%d9%85%d8%b6%d8%a7%d9%86%db%8c' AND Dj3i_posts.post_type = 'specialist'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /
+Paged: 0
+Found Posts: 1
+Max Num Pages: 0
+Post Count: 1
+Is 404: No
+Visital Total Count: 
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.*
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID = 22 AND Dj3i_posts.post_type = 'page'
+					 
+					 ORDER BY Dj3i_posts.post_date DESC
+					 
+
+
+URL: /doctors/
+Paged: 0
+Found Posts: 0
+Max Num Pages: 0
+Post Count: 12
+Is 404: No
+Visital Total Count: 66288
+Rewrite Rule: 
+Request: SELECT   Dj3i_posts.ID
+					 FROM Dj3i_posts 
+					 WHERE 1=1  AND Dj3i_posts.ID IN (8512,23568,23625,23633,23637,23772,23925,23951,24266,24430,39421,40003) AND ((Dj3i_posts.post_type = 'specialist' AND (Dj3i_posts.post_status = 'publish')))
+					 
+					 ORDER BY FIELD(Dj3i_posts.ID,23951,8512,23637,40003,23625,23633,39421,23772,23568,23925,24266,24430)
+					 LIMIT 0, 12
+
+

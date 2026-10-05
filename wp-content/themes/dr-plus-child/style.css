@@ -1,0 +1,476 @@
+/*
+Theme Name: Doctor Plus Child
+Theme URI: https://www.rtl-theme.com/dr-plus-wordpress-theme
+Author: MohammadAmin Noorani & MohammadJafar Khajeh
+Author URI: https://www.rtl-theme.com/author/mohammadamin7/products/
+Description: Child theme for Doctor Plus
+Version: 1.0.0.5
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+Text Domain: drplus-child
+Domain Path: /languages/
+Template: dr-plus
+Theme Status: Stable
+Changelog URI: https://www.rtl-theme.com/dr-plus-wordpress-theme
+License: Commercial - Licensed and encrypted by RTL-Theme.com
+License URI: https://www.rtl-theme.com/buyers-rules/
+*/
+
+/* VisitAl navigation: calm spacing, clear service grouping and keyboard focus. */
+.main-menu .visital-services-menu > a { font-weight: 700; }
+.main-menu .visital-services-menu .sub-menu { min-width: 12rem; padding: .45rem 0; }
+.main-menu .visital-service-item a { display: block; padding: .55rem 1rem; white-space: nowrap; }
+.main-menu a:focus-visible,
+.header-mobile-menu-wrap a:focus-visible,
+.header-mobile-menu-toggle-icons:focus-visible { outline: 3px solid #0b7285; outline-offset: 3px; }
+.header-mobile-menu-wrap .visital-services-menu > a { font-weight: 700; }
+.header-mobile-menu-wrap .visital-service-item a { padding-inline: 1.25rem; }
+.header-logo a,.visital-header-mark{cursor:pointer}
+.header-logo a:focus-visible,.visital-header-mark:focus-visible{outline:3px solid #55d6ad;outline-offset:4px}
+
+.visital-directory { padding-block: 2rem 4rem; }
+.visital-directory-hero { border-radius: 1.25rem; background: linear-gradient(135deg,#e8f7f7,#f8fbfb); padding: clamp(1.25rem,4vw,3rem); margin-bottom: 1.25rem; }
+.visital-directory-eyebrow { color:#0b7285; font-weight:700; margin:0 0 .5rem; }
+.visital-directory h1 { margin:.15rem 0 .5rem; font-size:clamp(1.6rem,4vw,2.35rem); }
+.visital-directory-lead { margin:0 0 1.25rem; color:#48606a; }
+.visital-directory-form { display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1.35fr) minmax(8rem, .8fr) auto; gap:.65rem; }
+.visital-directory-form input,.visital-directory-form select,.visital-directory-form button { min-height:3rem; border:1px solid #c9dadd; border-radius:.7rem; padding:.65rem .85rem; font:inherit; }
+.visital-directory-form input { background:#fff; }
+.visital-directory-form button { background:#0b7285; color:#fff; border-color:#0b7285; cursor:pointer; font-weight:700; padding-inline:1.35rem; }
+.visital-directory-form button:hover { background:#095c6b; }
+.visital-category-pills { display:flex; flex-wrap:wrap; gap:.55rem; margin:0 0 1.5rem; }
+.visital-category-pills a { border:1px solid #c9dadd; border-radius:999px; color:#164e59; padding:.5rem .85rem; text-decoration:none; background:#fff; }
+.visital-category-pills a.is-active,.visital-category-pills a:hover { background:#0b7285; border-color:#0b7285; color:#fff; }
+.visital-results-heading { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:1rem; }
+.visital-results-heading h2 { margin:0; }
+.visital-results-heading span { color:#60777c; }
+.visital-directory-grid { display:grid; }
+.visital-empty-state { border:1px dashed #b8cccf; border-radius:1rem; padding:2rem; text-align:center; color:#557077; }
+.visital-directory-pagination { margin-top:1.5rem; }
+@media (max-width:700px) { .visital-directory-form { grid-template-columns:1fr; } .visital-directory-form button { width:100%; } .visital-results-heading { display:block; } }
+
+/* VisitAl directory v2: focused, high-contrast RTL care finder. */
+.visital-directory { --vd-ink:#102a43; --vd-muted:#526779; --vd-line:#dce7ed; --vd-surface:#fff; --vd-bg:#f5f8fb; max-width:1180px; padding:1.25rem 1rem 5rem; color:var(--vd-ink); }
+.visital-directory-hero { isolation:isolate; position:relative; overflow:hidden; border-radius:28px; margin:0 0 3rem; padding:clamp(1.5rem,4vw,3.75rem); background:linear-gradient(125deg,#102a43 0%,#123c54 55%,#0c5360 100%); box-shadow:0 22px 55px rgba(16,42,67,.2); }
+.visital-hero-copy { position:relative; z-index:2; max-width:680px; color:#fff; }
+.visital-directory-eyebrow { display:inline-flex; align-items:center; gap:.5rem; margin:0 0 1.15rem; color:#8af0df; font-size:.8rem; font-weight:800; letter-spacing:.02em; }
+.visital-directory-eyebrow svg { width:1rem; height:1rem; fill:none; stroke:currentColor; stroke-width:2; }
+.visital-directory-eyebrow i { width:4px; height:4px; border-radius:50%; background:#8af0df; }
+.visital-directory-hero h1 { margin:0 0 .8rem; color:#fff; font-size:clamp(2rem,5vw,3.65rem); line-height:1.2; letter-spacing:-.045em; }
+.visital-directory-lead { max-width:600px; margin:0; color:#d5e6ef; font-size:clamp(.98rem,1.8vw,1.12rem); line-height:2; }
+.visital-hero-metrics { display:flex; flex-wrap:wrap; gap:1.6rem; margin-top:2rem; }
+.visital-hero-metrics div { display:flex; flex-direction:column; gap:.12rem; min-width:6.2rem; }
+.visital-hero-metrics strong { color:#fff; font-size:1.3rem; line-height:1.2; }
+.visital-hero-metrics span { color:#a8c3ce; font-size:.72rem; }
+.visital-hero-mark { position:absolute; z-index:1; top:-5rem; left:-4rem; width:26rem; height:26rem; opacity:.34; transform:rotate(18deg); }
+.visital-hero-mark span { position:absolute; inset:0; border:1px solid rgba(137,240,223,.22); border-radius:45%; }
+.visital-hero-mark span:nth-child(2) { inset:2.2rem; transform:rotate(35deg); }.visital-hero-mark span:nth-child(3) { inset:4.7rem; transform:rotate(65deg); }
+.visital-hero-mark svg { position:absolute; inset:9.3rem; width:7rem; height:7rem; fill:none; stroke:#8af0df; stroke-width:1.2; }
+.visital-hero-glow { position:absolute; border-radius:50%; filter:blur(2px); pointer-events:none; }.visital-hero-glow-one { width:20rem; height:20rem; right:-8rem; top:-12rem; background:rgba(45,212,191,.2); }.visital-hero-glow-two { width:18rem; height:18rem; right:22%; bottom:-16rem; background:rgba(56,189,248,.16); }
+.visital-directory-form { position:relative; z-index:3; max-width:860px; margin:2.45rem 0 0; padding:1rem; border:1px solid rgba(255,255,255,.5); border-radius:20px; background:rgba(255,255,255,.96); box-shadow:0 18px 38px rgba(4,25,40,.2); }
+.visital-search-primary { display:flex; align-items:center; gap:.75rem; min-height:3.75rem; padding:.35rem .45rem .35rem 0; border:1px solid #dbe5eb; border-radius:14px; background:#fff; }
+.visital-search-primary > svg { flex:0 0 auto; width:1.25rem; height:1.25rem; margin-inline:.8rem 0; fill:none; stroke:#668091; stroke-width:1.8; }
+.visital-search-primary input { min-width:0; flex:1; border:0; outline:0; color:var(--vd-ink); background:transparent; font:inherit; font-size:1rem; }.visital-search-primary input::placeholder { color:#8193a0; }
+.visital-search-submit { display:flex; align-items:center; justify-content:center; gap:.45rem; width:100%; min-height:3rem; margin-top:.65rem; padding:0 1.2rem; border:0; border-radius:10px; color:#082d3d; background:#8af0df; cursor:pointer; font:inherit; font-weight:800; transition:background .2s ease,transform .2s ease; }.visital-search-submit:hover { background:#5de2cc; transform:translateY(-1px); }.visital-search-submit:focus-visible { outline:3px solid #f6b73c; outline-offset:3px; }.visital-search-submit svg { width:1rem; height:1rem; fill:none; stroke:currentColor; stroke-width:2; }
+.visital-quick-searches { display:flex; flex-wrap:wrap; align-items:center; gap:.45rem; margin:.85rem .2rem .15rem; color:#718493; font-size:.76rem; }.visital-quick-searches button { padding:.35rem .7rem; border:1px solid #dce7ed; border-radius:999px; color:#36576a; background:#f7fafc; cursor:pointer; font:inherit; transition:border-color .2s ease,color .2s ease,background .2s ease; }.visital-quick-searches button:hover { border-color:#11a995; color:#087d70; background:#e9fbf7; }
+.visital-filter-details { margin-top:.7rem; border-top:1px solid #e5edf1; }.visital-filter-details summary { display:flex; align-items:center; justify-content:space-between; padding:.8rem .2rem .2rem; color:#496273; cursor:pointer; list-style:none; font-size:.82rem; font-weight:700; }.visital-filter-details summary::-webkit-details-marker { display:none; }.visital-filter-details summary > span { display:inline-flex; align-items:center; gap:.45rem; }.visital-filter-details summary svg { width:1.1rem; height:1.1rem; fill:none; stroke:currentColor; stroke-width:1.8; }.visital-filter-details .visital-chevron { transition:transform .2s ease; }.visital-filter-details[open] .visital-chevron { transform:rotate(180deg); }
+.visital-filter-grid { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(10rem,.8fr) auto; align-items:end; gap:.7rem; padding-top:.85rem; }.visital-field { display:flex; flex-direction:column; gap:.35rem; }.visital-field label { color:#5f7482; font-size:.72rem; font-weight:700; }.visital-field input,.visital-field select { min-height:2.75rem; width:100%; padding:.55rem .7rem; border:1px solid #d5e2e8; border-radius:9px; color:var(--vd-ink); background:#fbfdfe; font:inherit; outline:0; }.visital-field input:focus,.visital-field select:focus { border-color:#11a995; box-shadow:0 0 0 3px rgba(17,169,149,.13); }.visital-clear-filters { display:inline-flex; align-items:center; justify-content:center; min-height:2.7rem; padding:0 .75rem; color:#b54747; font-size:.75rem; font-weight:700; text-decoration:none; white-space:nowrap; }.visital-clear-filters:hover { color:#8e2e2e; text-decoration:underline; }
+.visital-directory-categories { margin-bottom:3rem; }.visital-section-intro { display:flex; align-items:end; justify-content:space-between; gap:1rem; margin-bottom:1rem; }.visital-section-kicker { display:block; margin-bottom:.35rem; color:#0c9989; font-size:.7rem; font-weight:800; letter-spacing:.08em; }.visital-section-intro h2,.visital-results-heading h2 { margin:0; color:var(--vd-ink); font-size:clamp(1.35rem,3vw,1.8rem); letter-spacing:-.025em; }.visital-section-intro p { max-width:18rem; margin:0; color:var(--vd-muted); font-size:.84rem; line-height:1.8; }
+.visital-category-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.75rem; }.visital-category-card { position:relative; display:flex; min-height:10.5rem; flex-direction:column; align-items:flex-start; justify-content:flex-end; gap:.3rem; overflow:hidden; padding:1rem; border:1px solid var(--vd-line); border-radius:17px; color:var(--vd-ink); background:var(--vd-surface); text-decoration:none; box-shadow:0 5px 15px rgba(22,50,73,.035); transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease; }.visital-category-card::before { position:absolute; right:0; top:0; width:4px; height:100%; background:var(--card-accent); content:""; }.visital-category-card:hover,.visital-category-card.is-active { border-color:var(--card-accent); box-shadow:0 14px 28px rgba(22,50,73,.1); transform:translateY(-3px); }.visital-category-icon { display:grid; width:2.65rem; height:2.65rem; place-items:center; margin-bottom:auto; border-radius:11px; color:var(--card-accent); background:color-mix(in srgb,var(--card-accent) 14%,white); }.visital-category-icon svg { width:1.4rem; height:1.4rem; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.7; }.visital-category-arrow { position:absolute; left:.8rem; top:.9rem; color:#a5b5bf; }.visital-category-arrow svg { width:1rem; height:1rem; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.7; }.visital-category-card strong { font-size:.94rem; }.visital-category-card > span:last-child { color:var(--vd-muted); font-size:.68rem; }
+.visital-directory-results { padding-top:1.5rem; border-top:1px solid var(--vd-line); }.visital-results-heading { display:flex; align-items:end; justify-content:space-between; gap:1rem; margin-bottom:1.25rem; }.visital-results-meta { display:flex; align-items:baseline; gap:.3rem; color:var(--vd-muted); font-size:.8rem; }.visital-results-meta strong { color:var(--vd-ink); font-size:1.3rem; }.visital-results-meta a { margin-inline-start:.65rem; color:#078879; font-weight:700; text-decoration:none; }.visital-results-meta a:hover { text-decoration:underline; }.visital-directory-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }.visital-directory-grid > * { min-width:0; }.visital-empty-state { display:flex; min-height:15rem; flex-direction:column; align-items:center; justify-content:center; gap:.4rem; padding:2rem; border:1px dashed #b8cbd5; border-radius:18px; color:var(--vd-muted); background:#fbfdfe; text-align:center; }.visital-empty-state strong { color:var(--vd-ink); font-size:1.05rem; }.visital-empty-state p { margin:0 0 .6rem; font-size:.82rem; }.visital-empty-state a { color:#087f73; font-size:.82rem; font-weight:700; text-decoration:none; }.visital-empty-icon { display:grid; width:3rem; height:3rem; margin-bottom:.25rem; place-items:center; border-radius:50%; color:#0c9989; background:#e7f8f5; }.visital-empty-icon svg { width:1.5rem; height:1.5rem; fill:none; stroke:currentColor; stroke-width:1.7; }.visital-directory-pagination ul { display:flex; justify-content:center; gap:.35rem; margin:1.5rem 0 0; padding:0; list-style:none; }.visital-directory-pagination a,.visital-directory-pagination span { display:grid; min-width:2.2rem; min-height:2.2rem; place-items:center; padding:.2rem .55rem; border:1px solid var(--vd-line); border-radius:8px; color:var(--vd-ink); text-decoration:none; }.visital-directory-pagination .current,.visital-directory-pagination a:hover { border-color:#0c9989; color:#fff; background:#0c9989; }
+.visital-directory a:focus-visible,.visital-directory button:focus-visible,.visital-directory input:focus-visible,.visital-directory select:focus-visible,.visital-directory summary:focus-visible { outline:3px solid #f6b73c; outline-offset:3px; }
+.visital-directory-grid { width:100%; max-width:1040px; margin-inline:auto!important; justify-items:stretch; align-items:stretch; }.visital-directory-grid .specialist { display:flex!important; width:100%!important; max-width:none!important; justify-self:stretch; box-sizing:border-box; min-height:100%; flex-direction:column; gap:.7rem; margin:0!important; padding:1.15rem; border:1px solid var(--vd-line); border-radius:18px; background:#fff; box-shadow:0 7px 20px rgba(22,50,73,.055); transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease; }.visital-directory-grid .specialist:hover { border-color:#b8dcd9; box-shadow:0 15px 30px rgba(22,50,73,.11); transform:translateY(-2px); }.visital-directory-grid .specialist-avatar-wrap { margin:0 auto .1rem; }.visital-directory-grid .specialist-avatar-wrap img { width:76px; height:76px; border:3px solid #e3f6f2; border-radius:50%; object-fit:cover; }.visital-directory-grid .specialist-name-wrap { min-height:4.1rem; text-align:center; }.visital-directory-grid .specialist-name { margin:0 0 .25rem; color:var(--vd-ink); font-size:1rem; }.visital-directory-grid .specialist-name a,.visital-directory-grid .specialist-short_bio a { color:inherit; text-decoration:none; }.visital-directory-grid .specialist-short_bio { color:#607786; font-size:.78rem; }.visital-directory-grid .specialist-is-verified { display:inline-flex; align-items:center; gap:.3rem; margin-top:.55rem; color:#078879; font-size:.68rem; }.visital-directory-grid .specialist-meta-wrap { min-height:1.4rem; margin-top:auto; }.visital-directory-grid .specialist-meta { display:flex; align-items:flex-start; justify-content:center; gap:.35rem; color:#718493; font-size:.7rem; line-height:1.7; text-align:center; }.visital-directory-grid .specialist-meta i { color:#0c9989; }.visital-directory-grid .specialist-btn { display:flex; align-items:center; justify-content:center; width:100%; min-height:2.7rem; margin-top:.35rem; border-radius:10px; color:#fff!important; background:#0c9989!important; text-decoration:none; font-size:.78rem; }.visital-directory-grid .specialist-btn:hover { background:#087f73!important; }
+.visital-directory-grid .specialist > * { max-width:100%; }
+.header-header-action-btn { width:auto!important; flex:0 0 auto!important; min-height:38px!important; max-width:178px; padding:.42rem .72rem!important; border:1px solid rgba(138,240,223,.5)!important; border-radius:999px!important; color:#082d3d!important; background:linear-gradient(135deg,#8af0df,#5de2cc)!important; box-shadow:0 7px 18px rgba(17,169,149,.2); font-size:.74rem!important; font-weight:800; white-space:nowrap; transition:transform .2s ease,box-shadow .2s ease,filter .2s ease; }.header-header-action-btn:hover { box-shadow:0 10px 22px rgba(17,169,149,.3); filter:saturate(1.08); transform:translateY(-1px); }.header-header-action-btn .button-text { font-size:.74rem!important; line-height:1.2; }
+@media (max-width:980px) { .visital-category-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }.visital-directory-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:700px) { .visital-directory { padding-inline:.75rem; }.visital-directory-hero { border-radius:20px; padding:1.4rem 1rem 1rem; margin-bottom:2.2rem; }.visital-directory-hero h1 { font-size:2rem; }.visital-directory-lead { font-size:.9rem; line-height:1.9; }.visital-hero-metrics { gap:1rem; margin-top:1.4rem; }.visital-hero-metrics strong { font-size:1.05rem; }.visital-hero-metrics span { font-size:.64rem; }.visital-hero-mark { opacity:.2; transform:scale(.7) rotate(18deg); transform-origin:top left; }.visital-directory-form { margin-top:1.5rem; padding:.7rem; border-radius:15px; }.visital-search-primary { min-height:3.2rem; }.visital-search-primary button { min-height:2.5rem; padding-inline:.75rem; }.visital-search-primary button span { font-size:.78rem; }.visital-quick-searches { gap:.35rem; }.visital-quick-searches span { width:100%; }.visital-quick-searches button { font-size:.7rem; }.visital-filter-grid { grid-template-columns:1fr; }.visital-clear-filters { justify-content:flex-start; padding:0; }.visital-section-intro { display:block; }.visital-section-intro p { margin-top:.45rem; }.visital-category-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; }.visital-category-card { min-height:9.3rem; padding:.8rem; }.visital-category-card strong { font-size:.84rem; }.visital-category-card > span:last-child { font-size:.62rem; }.visital-results-heading { align-items:flex-start; }.visital-results-meta { flex-wrap:wrap; justify-content:flex-end; }.visital-directory-grid { grid-template-columns:1fr; max-width:520px; gap:.75rem; } }
+@media screen and (max-width:767px) { body.sticky-header #header-container { position:relative!important; top:auto!important; } body.sticky-header #header-container + * { margin-top:0!important; } body.sticky-header #header-container + * #page-main { padding-top:16px!important; } #header_inner { min-height:58px; padding:9px 12px!important; gap:8px; border-radius:0 0 18px 18px; } .header-logo { max-width:92px; } .header-mobile-menu-toggle-icons { display:grid; width:40px; height:40px; padding:0!important; place-items:center; border-radius:10px; color:#102a43; background:#eef7f7; } .header-mobile-menu-toggle-icons i { font-size:1.45rem!important; } .header-actions-wrap .header-header-action-btn { max-width:140px; min-height:34px!important; padding:.35rem .55rem!important; font-size:.67rem!important; }.header-actions-wrap .header-header-action-btn .button-text { font-size:.67rem!important; } .header-mobile-menu-wrap { position:absolute; z-index:110; top:calc(100% + 8px); right:12px; left:12px; width:auto; height:min(72vh,520px); padding:12px!important; border:1px solid #dce7ed; border-radius:18px; background:#fff; box-shadow:0 18px 40px rgba(16,42,67,.18); } .header-mobile-menu-wrap .header-menu-wrap .menu>ul,.header-mobile-menu-wrap .header-menu-wrap ul.menu { gap:8px; } .header-mobile-menu-wrap .header-menu-wrap .menu>ul>li,.header-mobile-menu-wrap .header-menu-wrap ul.menu>li { padding:8px 4px; border-bottom:1px solid #edf2f4; } .visital-search-primary button { width:auto!important; flex:0 0 auto; } }
+@media (prefers-reduced-motion:reduce) { .visital-directory *,.visital-directory *::before,.visital-directory *::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; animation-iteration-count:1!important; } }
+
+/* Homepage search bridge: keep Elementor content, replace the legacy form behavior and styling. */
+.home .drplus-search-form.visital-home-search { display:grid; grid-template-columns:minmax(0,1fr) minmax(150px,190px) auto; align-items:stretch; gap:.6rem; width:100%; max-width:920px; margin-inline:auto; padding:.45rem; border:1px solid #dbe5eb; border-radius:16px; background:#fff; box-shadow:0 12px 28px rgba(16,42,67,.08); }
+.home .visital-home-search .drplus-search-field-group { min-width:0; margin:0; }
+.home .visital-home-search .drplus-search-input-wrap { display:flex; align-items:center; min-height:3.15rem; padding-inline:1rem; border:0; border-radius:11px; background:#f5f9fa; }
+.home .visital-home-search .drplus-search-input { width:100%; min-width:0; border:0; outline:0; background:transparent; color:#102a43; font:inherit; font-size:1rem; }
+.home .visital-home-search .drplus-search-city-field-group { display:flex; align-items:center; min-height:3.15rem; padding-inline:.8rem; border:1px solid #dbe5eb; border-radius:11px; background:#fff; }
+.home .visital-home-search .drplus-search-city-field-group select { width:100%; min-width:0; border:0; outline:0; background:transparent; color:#29495b; font:inherit; }
+.home .visital-home-search .drplus-custom-select-placeholder,.home .visital-home-search .drplus-custom-select-icon { display:none; }
+.home .visital-home-search .drplus-search-button { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; min-width:7rem; min-height:3.15rem; padding-inline:1rem; border:0; border-radius:11px; color:#082d3d; background:#8af0df; font:inherit; font-weight:800; cursor:pointer; transition:transform .2s ease,background .2s ease; }
+.home .visital-home-search .drplus-search-button:hover { background:#5de2cc; transform:translateY(-1px); }
+.home .visital-home-search .visital-home-search-label { display:inline; }
+.home .visital-home-search .drplus-search-input-popover,.home .visital-home-search + .drplus-search-input-popover { display:none!important; }
+@media (max-width:700px) { .home .drplus-search-form.visital-home-search { grid-template-columns:1fr; gap:.5rem; padding:.55rem; }.home .visital-home-search .drplus-search-button { width:100%; min-width:0; }.home .visital-home-search .drplus-search-input-wrap,.home .visital-home-search .drplus-search-city-field-group { min-height:2.9rem; } }
+
+/* Keep the search action under the field at every breakpoint. */
+.visital-directory-form{display:block!important}.visital-directory-form .visital-search-primary{width:100%;box-sizing:border-box}.visital-directory-form .visital-search-submit{box-sizing:border-box}
+
+/* Persistent site dark mode */
+body.visital-dark{color:#e7eef7;background:#0c1422}
+body.visital-dark #header-container,body.visital-dark #header_inner,body.visital-dark .header-mobile-menu-wrap{color:#e7eef7;background:#111d2d;border-color:#26384d}
+body.visital-dark .header-mobile-menu-wrap a,body.visital-dark .main-menu a{color:#e7eef7}
+body.visital-dark .visital-directory{--vd-ink:#e7eef7;--vd-muted:#aab9cb;--vd-line:#2b3d52;--vd-surface:#142235;--vd-bg:#0c1422;color:var(--vd-ink)}
+body.visital-dark .visital-directory-form{background:#142235;border-color:#32485f;box-shadow:0 18px 38px rgba(0,0,0,.35)}
+body.visital-dark .visital-search-primary,body.visital-dark .visital-field input,body.visital-dark .visital-field select{border-color:#344b62;background:#0f1b2b;color:#e7eef7}
+body.visital-dark .visital-search-primary input,body.visital-dark .visital-search-primary input::placeholder{color:#d9e5f1}
+body.visital-dark .visital-filter-details,body.visital-dark .visital-category-card,body.visital-dark .visital-directory-grid .specialist{background:#142235;border-color:#2b3d52;color:#e7eef7}
+body.visital-dark .visital-category-card strong,body.visital-dark .visital-directory-grid .specialist-name{color:#e7eef7}
+body.visital-dark .visital-profile-chip-main{color:#cbe2f6!important;background:#1d3851;border-color:#345671}
+body.visital-dark .visital-profile-chip-fellowship{color:#c5eee6!important;background:#173c3a;border-color:#28635d}
+.visital-dark-toggle{display:flex!important;align-items:center;justify-content:space-between;gap:.7rem;width:100%;padding:.65rem 1rem;border:0;border-radius:10px;color:inherit;background:transparent;cursor:pointer;font:inherit;font-weight:700;text-align:right}.visital-dark-toggle:hover{background:rgba(127,190,210,.12)}.visital-dark-toggle-icon{font-size:1.1rem;line-height:1}
+
+/* Homepage specialty cards: preserve full Persian labels on narrow screens,
+   strengthen the icons, and keep the section visually quiet. */
+.home .elementor-widget-drplus_search,.home .elementor-element-d212f23,.home .elementor-element-6750114 { display:none!important; }
+.home .drplus-proicon-group .proicon { min-width:0; overflow:visible; }
+.home .drplus-proicon-group .proicon-title { display:block!important; overflow:visible!important; white-space:normal!important; text-overflow:clip!important; -webkit-line-clamp:unset!important; color:#123d63; font-size:clamp(.82rem,1.2vw,1rem); line-height:1.65; }
+.home .drplus-proicon-group .proicon-img-wrap { display:grid; place-items:center; width:3.15rem; height:3.15rem; border-radius:1rem; background:#edf7f7; }
+.home .drplus-proicon-group .proicon-icon { color:#123d63!important; opacity:1!important; font-size:1.7rem!important; }
+.home .drplus-proicon-group .proicon-btn { color:#123d63!important; opacity:1!important; }
+.home .drplus-proicon-group .proicon { background:#fff; }
+.home .drplus-proicon-group .proicon:hover { background:#f5fbfb; }
+.home .section-title-inner { align-items:center; gap:.75rem; }
+.home .section-title-title { font-family:inherit; font-size:clamp(1.25rem,2.5vw,1.8rem); font-weight:800; line-height:1.45; }
+.home .section-title-icon-wrap { flex:0 0 auto; color:#123d63; opacity:1; }
+.home .drplus-search-form.visital-home-search { margin-top:0; transform:none; }
+@media (max-width:700px) {
+  .home .drplus-proicon-group .proicon { min-height:9.5rem; padding:1rem .75rem; }
+  .home .drplus-proicon-group .proicon-title { font-size:.9rem; line-height:1.7; }
+  .home .drplus-proicon-group .proicon-img-wrap { width:3.4rem; height:3.4rem; }
+  .home .drplus-proicon-group .proicon-icon { font-size:1.85rem!important; }
+  .home .section-title { margin-top:-.35rem; }
+  .home .section-title-title { font-size:1.35rem; }
+}
+
+/* Compact homepage clinic module: remove connector placeholders and keep the
+   section visually separate from the specialty panel above it. */
+.home .elementor-element-10a2989{margin-top:clamp(1.35rem,4vw,2.75rem)!important}
+.home .elementor-element-acc40ad .elementor-element-acbee21{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.home .elementor-element-acc40ad .elementor-element-1202b3b,
+.home .elementor-element-acc40ad .elementor-element-60460aa{width:100%!important;max-width:none!important;text-align:center!important;align-self:stretch!important}
+.home .elementor-element-acc40ad .elementor-element-7bee747{display:flex!important;width:100%!important;max-width:none!important;align-items:center!important;justify-content:center!important;margin-inline:auto!important}
+.home .elementor-element-acc40ad .elementor-element-7bee747 img{display:block!important;width:min(58%,220px)!important;max-width:220px!important;height:auto!important;margin:0 auto!important;object-fit:contain!important;transform:none!important}
+.home .elementor-element-ea8e6f4{display:block!important;width:calc(100% - 2rem)!important;max-width:1180px!important;margin:clamp(1.5rem,4vw,3rem) auto 0!important;padding:0!important;background:transparent!important}
+.home .elementor-element-ea8e6f4 .elementor-element-1bcc369{display:flex!important;width:100%!important;min-height:0!important;height:auto!important;margin:0 auto 1.1rem!important;padding:0!important;align-items:center!important;justify-content:center!important;gap:.55rem!important}
+.home .elementor-element-ea8e6f4 .elementor-element-aeb7160,
+.home .elementor-element-ea8e6f4 .elementor-element-f0709f5,
+.home .elementor-element-ea8e6f4 .elementor-widget-drplus_clinics,
+.home .elementor-element-ea8e6f4 .clinics{display:block!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important}
+.home .elementor-element-ea8e6f4 .clinics{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important}
+.home .elementor-element-ea8e6f4 .clinic-empty{display:none!important}
+.home .elementor-element-ea8e6f4 .clinic{display:flex!important;min-height:112px!important;height:auto!important;width:auto!important;margin:0!important;padding:1rem!important;align-items:center!important;justify-content:center!important;border:1px solid #e2ebef!important;border-radius:16px!important;background:#fff!important;box-shadow:0 8px 22px rgba(25,57,78,.06)!important}
+.home .elementor-element-ea8e6f4 .clinic-inner{display:flex!important;min-height:0!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:.45rem!important}
+.home .elementor-element-ea8e6f4 .clinic-icon{font-size:2rem!important;color:#315c78!important}
+.home .elementor-element-ea8e6f4 .clinic-title{font-size:.82rem!important;line-height:1.7!important;text-align:center!important;color:#31536c!important}
+.home .elementor-element-ea8e6f4 .clinic-popover{display:none!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic{background:#102b39!important;border-color:#2a5362!important;box-shadow:0 10px 24px rgba(0,0,0,.18)!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic-icon{color:#72e0bd!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic-title{color:#e8f7f3!important}
+@media(max-width:700px){
+  .home .elementor-element-10a2989{margin-top:1.25rem!important}
+  .home .elementor-element-ea8e6f4{width:calc(100% - 1.25rem)!important;margin-top:2rem!important}
+  .home .elementor-element-ea8e6f4 .clinics{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .home .elementor-element-ea8e6f4 .clinic{min-height:102px!important;padding:.75rem .55rem!important;border-radius:15px!important}
+  .home .elementor-element-ea8e6f4 .clinic-icon{font-size:1.8rem!important}
+  .home .elementor-element-ea8e6f4 .clinic-title{font-size:.78rem!important}
+}
+
+/* Dark mode completion: keep nested review content, menus, and commerce/forms
+   readable on every template, including legacy profile markup. */
+body.visital-dark .specialist_main_section *,
+body.visital-dark .specialist_reviews *,
+body.visital-dark .specialist_sidebar *,
+body.visital-dark .comments-area *,
+body.visital-dark .comment-respond *,
+body.visital-dark .comment *,
+body.visital-dark [id^="div-comment-"] *,
+body.visital-dark [class*="review"] *{color:#e8f7f3!important}
+body.visital-dark .specialist_main_section a,
+body.visital-dark .specialist_reviews a,
+body.visital-dark .specialist_sidebar a,
+body.visital-dark .comments-area a,
+body.visital-dark .comment a,
+body.visital-dark [id^="div-comment-"] a{color:#72e0bd!important}
+body.visital-dark .specialist_main_section [class*="star"],
+body.visital-dark .specialist_reviews [class*="star"],
+body.visital-dark [class*="rating"] [class*="star"],
+body.visital-dark .specialist_main_section [aria-label*="ستاره"]{color:#72e0bd!important;fill:#72e0bd!important}
+body.visital-dark .main-menu ul.sub-menu,
+body.visital-dark .header-menu-wrap ul.sub-menu,
+body.visital-dark .header-mobile-menu-wrap ul.sub-menu{background:#102b39!important;border-color:#2a5362!important;box-shadow:0 16px 36px rgba(0,0,0,.28)!important}
+body.visital-dark .main-menu ul.sub-menu a,
+body.visital-dark .header-menu-wrap ul.sub-menu a,
+body.visital-dark .header-mobile-menu-wrap ul.sub-menu a{color:#e8f7f3!important}
+body.visital-dark .woocommerce,
+body.visital-dark .woocommerce-page,
+body.visital-dark .woocommerce .shop_table,
+body.visital-dark .woocommerce form,
+body.visital-dark .booking-form,
+body.visital-dark .map-popup-body{background:#0d2531!important;color:#e8f7f3!important;border-color:#2a5362!important}
+body.visital-dark .woocommerce th,
+body.visital-dark .woocommerce td,
+body.visital-dark .woocommerce label,
+body.visital-dark .woocommerce .amount{color:#e8f7f3!important;border-color:#2a5362!important}
+body.visital-dark .visital-dark-toggle{background:#102b39!important;color:#72e0bd!important;border-color:#2a5362!important}
+
+/* The homepage itself owns the .home class on <body>, so include that form
+   explicitly; otherwise the icon color rules miss the root element. */
+body.visital-dark.home .drplus-proicon-group .proicon-icon,
+body.visital-dark.home .drplus-proicon-group .proicon-btn,
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic-icon{color:#72e0bd!important}
+body.visital-dark.home .drplus-proicon-group .proicon-title,
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic-title{color:#e8f7f3!important}
+body.visital-dark.home .drplus-proicon-group .proicon-img-wrap{background:#173c48!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic{background:#102b39!important;border-color:#2a5362!important}
+@media(max-width:700px){
+  .visital-header-mark{left:-10px!important}
+  .header-header-action-btn{transform:translateX(24px)}
+}
+
+/* Homepage clinic cards: readable Persian names and restrained separators. */
+.home .elementor-element-ea8e6f4 { background:transparent!important; }
+.home .elementor-element-ea8e6f4 .elementor-element-1bcc369 { align-items:center; gap:1rem!important; }
+.home .elementor-element-ea8e6f4 .elementor-element-f94ba1d { margin-top:-.35rem; }
+.home .elementor-element-ea8e6f4 .elementor-element-f94ba1d .elementor-heading-title { color:#123d63!important; font-size:clamp(1.35rem,3vw,2rem)!important; font-weight:800!important; line-height:1.5!important; }
+.home .elementor-element-ea8e6f4 .clinics { background:transparent!important; }
+.home .elementor-element-ea8e6f4 .clinic { background:transparent!important; }
+.home .elementor-element-ea8e6f4 .clinic-title { display:block!important; overflow:visible!important; white-space:normal!important; text-overflow:clip!important; -webkit-line-clamp:unset!important; color:#284f6b!important; line-height:1.7!important; }
+.home .elementor-element-ea8e6f4 .clinic-icon-wrap,.home .elementor-element-ea8e6f4 .clinic-icon-wrap *,.home .elementor-element-ea8e6f4 .clinic-icon { color:#234d6a!important; opacity:.9!important; }
+.home .elementor-element-ea8e6f4 .clinic-separator { background:transparent!important; border:0!important; box-shadow:none!important; color:#234d6a!important; opacity:.65!important; }
+.home .elementor-element-ea8e6f4 .clinic-separator-white { background:transparent!important; opacity:.5!important; }
+@media (max-width:700px) {
+  .home .elementor-element-ea8e6f4 .elementor-element-1bcc369 { gap:.75rem!important; }
+  .home .elementor-element-ea8e6f4 .elementor-element-f94ba1d .elementor-heading-title { font-size:1.45rem!important; }
+  .home .elementor-element-ea8e6f4 .clinic-title { font-size:.83rem; line-height:1.8; }
+  .home .elementor-element-ea8e6f4 .clinic-icon { font-size:2.1rem; }
+}
+
+/* Parent specialty and fellowship chips on profile pages */
+.visital-profile-categories{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:10px 0 16px;font-family:inherit;line-height:1.6}
+.visital-profile-category-group{display:contents}
+.visital-profile-category-chips{display:flex;flex-wrap:wrap;gap:7px}
+.visital-profile-chip{display:inline-flex;align-items:center;min-height:26px;padding:2px 9px;border-radius:7px;text-decoration:none!important;font-size:12px;font-weight:600;transition:color .15s ease,background .15s ease}
+.visital-profile-chip-main{color:#274b69!important;background:#f0f5f8;border:1px solid #dce7ed}
+.visital-profile-chip-fellowship{color:#2b6d65!important;background:#eef8f5;border:1px solid #d8eee8}
+.visital-profile-chip:hover{color:#0b7285!important;background:#e4f4f1}
+@media (max-width:600px){.visital-profile-categories{margin:8px 0 14px}.visital-profile-chip{font-size:11px;min-height:25px;padding:2px 8px}}
+
+/* Global dark theme surfaces. Kept in the stylesheet as a cache-safe fallback. */
+body.visital-dark,body.visital-dark #page,body.visital-dark #page-main,body.visital-dark .site-content,body.visital-dark .elementor-page{background:#07151f!important;color:#e8f7f3!important}
+body.visital-dark .elementor-element-acc40ad{background:#03306a!important}
+body.visital-dark .elementor-element-10a2989{background:#0d2531!important;border-color:#214453!important}
+body.visital-dark .proicon,body.visital-dark a.proicon,body.visital-dark .proicon.slider-slide{background:#102b39!important;color:#e8f7f3!important;border-color:#2a5362!important;box-shadow:0 8px 18px rgba(0,0,0,.22)!important}
+body.visital-dark .proicon *,body.visital-dark .clinic-popover,body.visital-dark .clinic-card,body.visital-dark .clinic-item{color:#e8f7f3!important}
+body.visital-dark .proicon .proicon-img-wrap,body.visital-dark .proicon .proicon-icon-wrap{background:#173c48!important;border-color:#2a5362!important}
+body.visital-dark .clinic-popover{background:#102b39!important;border-color:#2a5362!important}
+body.visital-dark .header-popover,body.visital-dark .account-items,body.visital-dark .header-mini-cart-wrap{background:#102b39!important;color:#e8f7f3!important;border-color:#2a5362!important}
+body.visital-dark .header-popover a,body.visital-dark .account-items a{color:#e8f7f3!important}
+body.visital-dark h1,body.visital-dark h2,body.visital-dark h3,body.visital-dark h4,body.visital-dark h5,body.visital-dark h6,body.visital-dark p,body.visital-dark label,body.visital-dark li{color:#e8f7f3!important}
+body.visital-dark .header-menu-wrap a,body.visital-dark .main-menu a,body.visital-dark .header-mobile-menu-wrap a{color:#d8f2ed!important}
+body.visital-dark .header-action-btn,body.visital-dark .header-cart-btn,body.visital-dark .header-account{background:#102b39!important;color:#72e0bd!important;border-color:#2a5362!important}
+body.visital-dark .header-header-action-btn{background:#55d6ad!important;color:#06251f!important;border-color:#55d6ad!important}
+body.visital-dark .drplus-breadcrumbs,body.visital-dark .breadcrumb-wrap,body.visital-dark .breadcrumb-item{color:#9fc4c5!important}
+body.visital-dark .specialist_article,body.visital-dark .specialist_main_section,body.visital-dark .specialist_sidebar,body.visital-dark .specialist_section,body.visital-dark .specialist_reviews,body.visital-dark .comments-area,body.visital-dark .comment-respond,body.visital-dark .specialist_office,body.visital-dark .specialist-card{background:#0d2531!important;color:#e8f7f3!important;border-color:#2a5362!important}
+body.visital-dark .specialist_article h1,body.visital-dark .specialist_article h2,body.visital-dark .specialist_article h3,body.visital-dark .specialist_article h4,body.visital-dark .specialist_article p,body.visital-dark .specialist_article span,body.visital-dark .specialist_article div,body.visital-dark .specialist_article li{color:#e8f7f3!important}
+body.visital-dark .specialist_article a{color:#72e0bd!important}
+body.visital-dark .specialist_article .section-title-title,body.visital-dark .specialist_article .comment-author-name,body.visital-dark .specialist_article .comment-text-wrap,body.visital-dark .specialist_article .comment-meta,body.visital-dark .specialist_article .specialist_office-address,body.visital-dark .specialist_article .specialist_office-name{color:#e8f7f3!important}
+body.visital-dark .specialist_article .specialist_code-wrap,body.visital-dark .specialist_article .visital-profile-chip-main,body.visital-dark .specialist_article .visital-profile-chip-fellowship{background:#102b39!important;border-color:#2a5362!important;color:#b9eee2!important}
+body.visital-dark .specialist_article input,body.visital-dark .specialist_article textarea,body.visital-dark .specialist_article select{background:#102b39!important;color:#e8f7f3!important;border-color:#2a5362!important}
+body.visital-dark .specialist_article .button-primary,body.visital-dark .specialist_article #specialist_booking-btn,body.visital-dark .specialist_article #specialist_consultation-btn{background:#55d6ad!important;color:#06251f!important;border-color:#55d6ad!important}
+body.visital-dark .specialist_article .drplus-comment-patient-score,body.visital-dark .specialist_article .specialist_verified-icon,body.visital-dark .specialist_article .specialist-is-verified-text{color:#72e0bd!important}
+body.visital-dark input,body.visital-dark select,body.visital-dark textarea,body.visital-dark button{background:#102b39!important;color:#e8f7f3!important;border-color:#2a5362!important}
+body.visital-dark .button-primary,body.visital-dark .drplus-search-button,body.visital-dark .specialist-btn{background:#55d6ad!important;color:#06251f!important;border-color:#55d6ad!important}
+body.visital-dark #footer,body.visital-dark #footer-container,body.visital-dark .footer-content{background:#061827!important;color:#d9eee9!important;border-color:#17394a!important}
+@media (min-width:701px){.visital-header-mark{left:-16px!important}}
+@media (max-width:700px){.visital-header-mark{left:-10px!important}}
+
+/* Mobile homepage rhythm: keep the hero compact and let clinic cards flow
+   without the placeholder cells used by the desktop connector layout. */
+@media (max-width:767px){
+  .home .elementor-element-acc40ad{min-height:0!important;padding:28px 20px 24px!important;border-radius:24px!important;}
+  .home .elementor-element-acc40ad .elementor-element-7bee747{max-width:220px!important;}
+  .home .elementor-element-acc40ad .elementor-element-7bee747 img{max-width:220px!important;height:auto!important;}
+  .home .elementor-element-ea8e6f4 .clinics{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;height:auto!important;}
+  .home .elementor-element-ea8e6f4 .clinic-empty{display:none!important;}
+  .home .elementor-element-ea8e6f4 .clinic{display:flex!important;min-height:118px!important;width:auto!important;margin:0!important;padding:14px 10px!important;border:1px solid #e5edf1!important;border-radius:22px!important;background:#fff!important;align-items:center!important;justify-content:center!important;}
+  .home .elementor-element-ea8e6f4 .clinic-inner{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:8px!important;}
+  .home .elementor-element-ea8e6f4 .clinic-separator{display:none!important;}
+  .home .elementor-element-ea8e6f4 .clinic-title{font-size:.85rem!important;text-align:center!important;line-height:1.7!important;}
+  body.visital-dark .home .elementor-element-ea8e6f4 .clinic{background:#102b39!important;border-color:#2a5362!important;}
+  #footer{padding-top:22px!important;}
+  #footer_content{display:flex!important;flex-direction:column!important;gap:26px!important;width:100%!important;max-width:none!important;padding:0 16px!important;box-sizing:border-box!important;}
+  #footer_about_us,#footer_info,#footer-socials-wrap{width:100%!important;max-width:none!important;min-width:0!important;min-height:0!important;grid-column:auto!important;align-items:center!important;text-align:center!important;}
+  #footer-socials-wrap{order:-1!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important;gap:12px!important;padding:0!important;}
+  #footer-socials-wrap .footer-section-title,#footer-socials-wrap .footer-section-title-text{display:block!important;visibility:visible!important;opacity:1!important;color:#eaf5f3!important;text-align:center!important;}
+  #footer-social-section{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:10px!important;margin:0!important;}
+  #footer-social-section .footer-social-item{display:flex!important;visibility:visible!important;opacity:1!important;width:56px!important;height:56px!important;align-items:center!important;justify-content:center!important;border-radius:16px!important;}
+  #footer-socials-wrap .footer-social>a{display:flex!important;visibility:visible!important;opacity:1!important;justify-content:center!important;margin-top:10px!important;}
+}
+
+/* Final homepage clinic layout overrides. */
+.home .elementor-element-10a2989{margin-top:clamp(1.35rem,4vw,2.75rem)!important}
+.home .elementor-element-acc40ad .elementor-element-acbee21{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.home .elementor-element-acc40ad .elementor-element-1202b3b,.home .elementor-element-acc40ad .elementor-element-60460aa{width:100%!important;max-width:none!important;text-align:center!important;align-self:stretch!important}
+.home .elementor-element-acc40ad .elementor-element-7bee747{display:flex!important;width:100%!important;max-width:none!important;align-items:center!important;justify-content:center!important;margin-inline:auto!important}
+.home .elementor-element-acc40ad .elementor-element-7bee747 img{display:block!important;width:min(58%,220px)!important;max-width:220px!important;height:auto!important;margin:0 auto!important;object-fit:contain!important;transform:none!important}
+.home .elementor-element-ea8e6f4{display:block!important;width:calc(100% - 2rem)!important;max-width:1180px!important;margin:clamp(1.5rem,4vw,3rem) auto 0!important;padding:0!important;background:transparent!important}
+.home .elementor-element-ea8e6f4 .elementor-element-1bcc369{display:flex!important;width:100%!important;min-height:0!important;height:auto!important;margin:0 auto 1.1rem!important;padding:0!important;align-items:center!important;justify-content:center!important;gap:.55rem!important}
+.home .elementor-element-ea8e6f4 .elementor-element-aeb7160,.home .elementor-element-ea8e6f4 .elementor-element-f0709f5,.home .elementor-element-ea8e6f4 .elementor-widget-drplus_clinics,.home .elementor-element-ea8e6f4 .clinics{display:block!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important}
+.home .elementor-element-ea8e6f4 .clinics{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important}
+.home .elementor-element-ea8e6f4 .clinic-empty{display:none!important}
+.home .elementor-element-ea8e6f4 .clinic{display:flex!important;min-height:112px!important;height:auto!important;width:auto!important;margin:0!important;padding:1rem!important;align-items:center!important;justify-content:center!important;border:1px solid #e2ebef!important;border-radius:16px!important;background:#fff!important;box-shadow:0 8px 22px rgba(25,57,78,.06)!important}
+.home .elementor-element-ea8e6f4 .clinic-inner{display:flex!important;min-height:0!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:.45rem!important}
+.home .elementor-element-ea8e6f4 .clinic-icon{font-size:2rem!important;color:#315c78!important}
+.home .elementor-element-ea8e6f4 .clinic-title{font-size:.82rem!important;line-height:1.7!important;text-align:center!important;color:#31536c!important}
+.home .elementor-element-ea8e6f4 .clinic-popover{display:none!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic{background:#102b39!important;border-color:#2a5362!important;box-shadow:0 10px 24px rgba(0,0,0,.18)!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic-icon{color:#72e0bd!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinic-title{color:#e8f7f3!important}
+@media(max-width:700px){
+  .home .elementor-element-10a2989{margin-top:1.25rem!important}
+  .home .elementor-element-ea8e6f4{width:calc(100% - 1.25rem)!important;margin-top:2rem!important}
+  .home .elementor-element-ea8e6f4 .clinics{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .home .elementor-element-ea8e6f4 .clinic{min-height:102px!important;padding:.75rem .55rem!important;border-radius:15px!important}
+  .home .elementor-element-ea8e6f4 .clinic-icon{font-size:1.8rem!important}
+  .home .elementor-element-ea8e6f4 .clinic-title{font-size:.78rem!important}
+}
+
+/* Final specificity fixes for Elementor's generated clinic/card rules. */
+body.home .elementor-element-ea8e6f4 .clinics > .clinic.clinic-empty{display:none!important}
+.home .elementor-element-acc40ad .elementor-element-7bee747{flex:1 1 100%!important;align-self:stretch!important}
+.home .elementor-element-acc40ad .elementor-element-7bee747 img{width:220px!important;max-width:70%!important}
+
+/* Final compact sizing for homepage clinic cards. */
+body.home .elementor-element-ea8e6f4 .clinics{grid-auto-rows:minmax(0,auto)!important;align-items:start!important}
+body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty){box-sizing:border-box!important;min-height:96px!important;height:96px!important;padding:9px 8px!important}
+body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty) .clinic-inner{min-height:0!important;height:auto!important;gap:4px!important}
+body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty) .clinic-icon{font-size:1.65rem!important;line-height:1!important}
+body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty) .clinic-title{font-size:.76rem!important;line-height:1.55!important}
+@media(max-width:700px){
+ body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty){min-height:96px!important;height:96px!important;padding:8px 7px!important}
+ body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty) .clinic-icon{font-size:1.55rem!important}
+ body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty) .clinic-title{font-size:.72rem!important;line-height:1.5!important}
+}
+
+
+/* Correct the measured 10px asset offset inside the centered hero wrapper. */
+body.home .elementor-element-acc40ad .elementor-element-7bee747 img{position:relative!important;left:10px!important}
+
+
+/* Synchronized two-row specialty carousel. Each snap step contains one
+   complete top/bottom pair, so mobile never shows a clipped next card. */
+.home .elementor-element-10a2989 .elementor-element-49d606d{overflow:hidden!important}
+.home .elementor-element-10a2989 .visital-specialty-paired-track{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;direction:rtl;width:100%;}
+.home .elementor-element-10a2989 .visital-specialty-pair{display:grid;grid-template-rows:repeat(2,minmax(0,1fr));gap:10px;min-width:0;}
+.home .elementor-element-10a2989 .visital-specialty-pair .proicon{width:100%!important;max-width:none!important;min-width:0!important;box-sizing:border-box!important;}
+.home .elementor-element-10a2989 .visital-specialty-pair .proicon-texts{min-width:0!important;justify-self:stretch!important;text-align:right!important;direction:rtl!important;}
+.home .elementor-element-10a2989 .visital-specialty-pair .proicon-title{margin:0!important;text-align:right!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+.home .elementor-element-10a2989 .section-title-inner{gap:.35rem!important;align-items:center!important}
+.home .elementor-element-10a2989 .section-title-title{margin:0!important}
+.home .elementor-element-10a2989 .section-title-icon-wrap::before,.home .elementor-element-ea8e6f4 .elementor-element-265332b .drplus-simple-icon-wrap::before{width:22px!important;height:22px!important;border-radius:8px!important}
+.home .elementor-element-10a2989 .section-title-icon{font-size:13px!important;line-height:22px!important}
+.home .elementor-element-10a2989 .section-title-icon-wrap::after{content:'V';position:absolute;inset:0;display:grid;place-items:center;color:#0c3e72;font-size:7px;font-weight:900;line-height:1;pointer-events:none;transform:translateY(1px)}
+@media(max-width:700px){
+  .home .elementor-element-10a2989 .elementor-element-49d606d{overflow:hidden!important;padding-inline:0!important}
+  .home .elementor-element-10a2989 .visital-specialty-paired-track{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;gap:10px!important;padding:0 0 4px!important;scroll-snap-type:x mandatory!important;scroll-behavior:smooth!important;scrollbar-width:none!important;-webkit-overflow-scrolling:touch!important}
+  .home .elementor-element-10a2989 .visital-specialty-paired-track::-webkit-scrollbar{display:none!important}
+  .home .elementor-element-10a2989 .visital-specialty-pair{flex:0 0 calc((100% - 10px)/2)!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:10px!important;scroll-snap-align:start!important;scroll-snap-stop:always!important}
+  .home .elementor-element-10a2989 .visital-specialty-pair .proicon{height:92px!important;min-height:92px!important;padding:9px 8px!important;grid-template-columns:44px minmax(0,1fr) 22px!important;gap:5px!important;border-radius:16px!important}
+  .home .elementor-element-10a2989 .visital-specialty-pair .proicon-img-wrap{width:40px!important;height:40px!important}
+  .home .elementor-element-10a2989 .visital-specialty-pair .proicon-icon{font-size:1.55rem!important}
+  .home .elementor-element-10a2989 .visital-specialty-pair .proicon-title{font-size:.78rem!important;line-height:1.45!important}
+  .home .elementor-element-10a2989 .section-title-icon-wrap::before{width:21px!important;height:21px!important;border-radius:7px!important}
+  .home .elementor-element-10a2989 .section-title-icon{font-size:12px!important}
+}
+
+
+/* Make the small brand V readable in the specialty and clinic heading marks. */
+.home .elementor-element-10a2989 .section-title-icon-wrap,.home .elementor-element-ea8e6f4 .elementor-element-265332b .drplus-simple-icon-wrap{position:relative!important}
+.home .elementor-element-10a2989 .section-title-icon-wrap::after,.home .elementor-element-ea8e6f4 .elementor-element-265332b .drplus-simple-icon-wrap::after{color:#fff!important;font-size:8px!important;font-weight:900!important;text-shadow:0 1px 2px rgba(7,37,62,.25)}
+
+
+/* Clean, borderless clinic module surfaces. Soft shadows keep cards distinct. */
+body.home .elementor-element-ea8e6f4,
+body.home .elementor-element-ea8e6f4 .elementor-element-aeb7160,
+body.home .elementor-element-ea8e6f4 .elementor-element-f0709f5,
+body.home .elementor-element-ea8e6f4 .elementor-widget-drplus_clinics,
+body.home .elementor-element-ea8e6f4 .clinics{border:0!important;outline:0!important}
+body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty){border:0!important;outline:0!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty){border:0!important}
+
+
+/* Remove the legacy connector diamonds and rules from the clinic grid. */
+body.home .elementor-element-ea8e6f4 .clinic-separator,
+body.home .elementor-element-ea8e6f4 .clinic-separator-white{display:none!important;border:0!important;background:transparent!important;box-shadow:none!important}
+
+
+/* Final footer alignment and full specialty-name treatment. */
+body.home .elementor-element-10a2989 .visital-specialty-pair .proicon-title{display:block!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;-webkit-line-clamp:unset!important;line-clamp:unset!important;word-break:normal!important;overflow-wrap:normal!important}
+body.home #footer-org-items-wrap{display:none!important}
+body.home #footer-socials-wrap{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;text-align:center!important;gap:14px!important}
+body.home #footer-socials-wrap > #footer-social{display:flex!important;width:min(100%,420px)!important;flex-direction:column!important;align-items:center!important;text-align:center!important;gap:12px!important}
+body.home #footer-social-section{display:grid!important;width:100%!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important;align-items:center!important;justify-items:center!important;margin:0!important}
+body.home #footer-social-section .footer-social-item{display:flex!important;width:56px!important;height:56px!important;max-width:56px!important;align-items:center!important;justify-content:center!important;margin:0!important}
+body.home #footer-socials-wrap .site-title{display:flex!important;width:100%!important;justify-content:center!important;align-items:center!important;margin:0!important}
+body.home #footer-socials-wrap .site-title-inner{display:flex!important;width:100%!important;justify-content:center!important;align-items:center!important}
+body.home #footer-socials-wrap #site-logo{display:block!important;width:100%!important;text-align:center!important;line-height:0!important}
+body.home #footer-socials-wrap #site-logo img{display:block!important;width:min(300px,92%)!important;max-width:300px!important;height:auto!important;margin:0 auto!important;object-fit:contain!important}
+body.home #footer_info{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)!important;gap:22px!important;align-items:start!important}
+body.home #footer_info .footer-menu-wrap,body.home #footer_info #footer-contact_info{min-width:0!important;text-align:center!important}
+body.home #footer_info .footer-menu ul{display:grid!important;gap:4px!important;margin:0!important;padding:0!important;list-style:none!important}
+body.home #footer_info .footer-menu li{display:block!important;margin:0!important;padding:0!important;min-width:0!important}
+body.home #footer_info .footer-menu li a{display:flex!important;justify-content:center!important;align-items:center!important;min-height:28px!important;white-space:normal!important;text-align:center!important}
+body.home #footer-contact_info-inner{width:100%!important}
+body.home #footer-contact_info .footer-contacts-wrap{display:flex!important;flex-direction:column!important;gap:8px!important;width:100%!important}
+body.home #footer-contact_info .footer-contact-wrap{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;width:100%!important;min-width:0!important}
+body.home #footer-contact_info .footer-contact-wrap > i{flex:0 0 22px!important;width:22px!important;text-align:center!important}
+body.home #footer-contact_info .footer-contact{display:block!important;max-width:100%!important;overflow-wrap:anywhere!important;text-align:center!important}
+@media(max-width:700px){
+ body.home .elementor-element-10a2989 .visital-specialty-pair .proicon-title{font-size:.76rem!important;line-height:1.4!important}
+ body.home #footer_content{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:26px!important}
+ body.home #footer-socials-wrap{order:-1!important;width:100%!important}
+ body.home #footer-socials-wrap > #footer-social{width:min(100%,420px)!important}
+ body.home #footer_info{display:flex!important;flex-direction:column!important;align-items:center!important;gap:24px!important;width:100%!important}
+ body.home #footer_info .footer-menu-wrap,body.home #footer_info #footer-contact_info{width:100%!important;max-width:360px!important}
+ body.home #footer_info .footer-menu ul{justify-items:center!important}
+ body.home #footer_info .footer-menu li a{min-height:30px!important}
+}
+
+
+/* Remove generated clinic grid/card pseudo-lines as well as real borders. */
+body.home .elementor-element-ea8e6f4 .clinics::before,
+body.home .elementor-element-ea8e6f4 .clinics::after,
+body.home .elementor-element-ea8e6f4 .clinics > .clinic::before,
+body.home .elementor-element-ea8e6f4 .clinics > .clinic::after{display:none!important;content:none!important;border:0!important;background:transparent!important;box-shadow:none!important}
+
+
+
+/* Replace the last pale card edge with a flat surface. */
+body.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty){box-shadow:none!important;background:#f8fbfc!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .clinics > .clinic:not(.clinic-empty){box-shadow:none!important;background:#102b39!important}
+
+/* Remove the original filler-tile edges that remained visible between clinic cards. */
+body.home .elementor-element-ea8e6f4 .clinics > .clinic.clinic-empty{border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important}
+
+/* Smaller, evenly spaced social buttons. */
+body.home #footer-social-section{gap:14px!important}
+body.home #footer-social-section .footer-social-item{width:48px!important;height:48px!important;max-width:48px!important;padding:0!important;box-sizing:border-box!important;border-radius:14px!important}
+body.home #footer-social-section .footer-social-item > i{font-size:21px!important;line-height:1!important}
+
+/* Keep the clinic heading star glyph without the filled rounded tile behind it. */
+body.home .elementor-element-ea8e6f4 .drplus-simple-icon-wrap.icon-has-bg{width:26px!important;height:26px!important;background:transparent!important;border:0!important;box-shadow:none!important}
+body.home .elementor-element-ea8e6f4 .drplus-simple-icon-wrap.icon-has-bg::before{display:none!important;content:none!important;background:transparent!important;box-shadow:none!important}
+body.home .elementor-element-ea8e6f4 .drplus-simple-icon-wrap.icon-has-bg > .drplus-simple-icon{color:#03306a!important;background:transparent!important}
+body.visital-dark.home .elementor-element-ea8e6f4 .drplus-simple-icon-wrap.icon-has-bg > .drplus-simple-icon{color:#8ee6dc!important}
+
+/* Keep both theme logo variants fully inside the header control. */
+.visital-header-mark{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important;overflow:hidden!important}
+.visital-header-mark img{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important;object-fit:contain!important}
+@media(max-width:700px){
+ .visital-header-mark{left:4px!important;width:32px!important;height:32px!important;max-width:32px!important;max-height:32px!important}
+ .visital-header-mark img{width:32px!important;height:32px!important;max-width:32px!important;max-height:32px!important}
+}
+
+#header_inner .visital-header-mark{left:-4px!important}
+@media(max-width:700px){#header_inner .visital-header-mark{left:-4px!important}}
+

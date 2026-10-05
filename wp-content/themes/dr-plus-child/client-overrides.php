@@ -293,7 +293,9 @@ function ahura_filter_specialist_sections( $query ) {
         $term = get_queried_object();
         if ( $term && !is_wp_error( $term ) ) $city = $term->slug;
     }
-    
+
+    $district = isset($_GET['district']) ? sanitize_text_field( wp_unslash( $_GET['district'] ) ) : '';
+
     $specialities = [];
     if ( !empty($_GET['specialities']) ) {
         $specialities = is_array($_GET['specialities']) ? $_GET['specialities'] : [$_GET['specialities']];
@@ -303,7 +305,7 @@ function ahura_filter_specialist_sections( $query ) {
     
     $search_cache_text = isset( $_GET['q'] ) ? sanitize_text_field( wp_unslash( $_GET['q'] ) ) : '';
     $speciality_cache_text = isset( $_GET['subspeciality'] ) ? sanitize_text_field( wp_unslash( $_GET['subspeciality'] ) ) : ( isset( $_GET['speciality'] ) ? sanitize_text_field( wp_unslash( $_GET['speciality'] ) ) : '' );
-    $cache_key = 'visital_sp_ids_v11_declared_speciality_' . md5($sec . '_' . $city . '_' . implode(',', $specialities) . '_' . $search_cache_text . '_' . $speciality_cache_text);
+    $cache_key = 'visital_sp_ids_v12_declared_speciality_' . md5($sec . '_' . $city . '_' . $district . '_' . implode(',', $specialities) . '_' . $search_cache_text . '_' . $speciality_cache_text);
     $cached_ids = get_transient( $cache_key );
     $time_start = microtime(true);
     if ( false !== $cached_ids ) {
@@ -336,7 +338,16 @@ function ahura_filter_specialist_sections( $query ) {
                 $args[] = $city_term->term_id;
             }
         }
-        
+
+        if ( $district ) {
+            $district_term = get_term_by( 'slug', $district, 'location' );
+            if ( $district_term ) {
+                $join .= " JOIN {$wpdb->term_relationships} tr_dist ON p.ID = tr_dist.object_id ";
+                $join .= " JOIN {$wpdb->term_taxonomy} tt_dist ON (tr_dist.term_taxonomy_id = tt_dist.term_taxonomy_id AND tt_dist.taxonomy = 'location' AND tt_dist.term_id = %d) ";
+                $args[] = $district_term->term_id;
+            }
+        }
+
         if ( !empty($specialities) ) {
             $join .= " JOIN {$wpdb->prefix}drplus_specialists sp ON p.ID = sp.post_id ";
             $placeholders = implode(',', array_fill(0, count($specialities), '%d'));
@@ -358,8 +369,8 @@ function ahura_filter_specialist_sections( $query ) {
             $search_groups = array();
             foreach ( $variants as $variant ) {
                 $needle = '%' . $wpdb->esc_like( $variant ) . '%';
-                $search_groups[] = '(p.post_title LIKE %s OR sp_search.name LIKE %s OR sp_search.subtitle LIKE %s)';
-                $args = array_merge( $args, array( $needle, $needle, $needle ) );
+                $search_groups[] = '(p.post_title LIKE %s OR sp_search.name LIKE %s OR sp_search.subtitle LIKE %s OR sp_search.meta LIKE %s)';
+                $args = array_merge( $args, array( $needle, $needle, $needle, $needle ) );
                 $compact_needle = '%' . $wpdb->esc_like( ahura_normalize_search_text( $variant, true ) ) . '%';
                 $normalized_title = "REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(p.post_title,'ي','ی'),'ى','ی'),'ك','ک'),'‌',''),' ','')";
                 $normalized_name = "REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(sp_search.name,'ي','ی'),'ى','ی'),'ك','ک'),'‌',''),' ','')";

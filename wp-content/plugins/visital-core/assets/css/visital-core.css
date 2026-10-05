@@ -1,0 +1,26 @@
+.visital-next-slot{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .45rem;margin:.55rem 0 0;padding:.4rem .6rem;border-radius:9px;font-size:.74rem;line-height:1.6}
+.visital-next-slot i{font-size:.95rem;line-height:1}
+.visital-next-slot--available{color:#0b6b4f;background:#e7f8f1;border:1px solid #c6ecdd}
+.visital-next-slot--available .visital-next-slot-label{color:#0b6b4f;font-weight:700}
+.visital-next-slot--available .visital-next-slot-value{color:#07543e;font-weight:800}
+.visital-next-slot--none{color:#7a8a94;background:#f3f6f8;border:1px solid #e1e9ed}
+.visital-next-slot--none .visital-next-slot-value{font-weight:600}
+
+.visital-directory-grid .specialist .visital-next-slot{justify-content:center;width:100%;box-sizing:border-box}
+
+.visital-day-capacity{display:block;margin-top:2px;font-size:10px;line-height:1.2;font-weight:700}
+.visital-day-capacity--open{color:#0c9989}
+.visital-day-capacity--full{color:#c0564b}
+.mjpersian-datepicker .table-days td .visital-day-capacity,
+.datepicker-plot-area .table-days td .visital-day-capacity{pointer-events:none}
+
+body.visital-dark .visital-next-slot--available{color:#8af0df;background:#13342b;border-color:#1f5346}
+body.visital-dark .visital-next-slot--available .visital-next-slot-label{color:#8af0df}
+body.visital-dark .visital-next-slot--available .visital-next-slot-value{color:#b9f5e8}
+body.visital-dark .visital-next-slot--none{color:#9fb2bd;background:#13202c;border-color:#26384d}
+body.visital-dark .visital-day-capacity--open{color:#72e0bd}
+body.visital-dark .visital-day-capacity--full{color:#f0a097}
+
+@media (max-width:600px){
+.visital-next-slot{font-size:.72rem;padding:.38rem .5rem}
+}

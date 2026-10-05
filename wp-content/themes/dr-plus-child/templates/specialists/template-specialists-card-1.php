@@ -71,6 +71,10 @@ if ( ! empty( $avatar_url ) ) {
 	] ); ?>
 </div>
 <?php
+if ( function_exists( 'visital_next_slot_badge' ) ) {
+	visital_next_slot_badge( $specialist );
+}
+
 $button_text = $options['view_specialist_btn_text'];
 $button_link = $page_link;
 get_template_part( "templates/components/template-components-button", null, [

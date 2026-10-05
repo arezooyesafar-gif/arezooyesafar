@@ -18,6 +18,7 @@ class Visital_Assets {
 	private function __construct() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ], 30 );
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_calendar' ], 100 );
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_reviews' ], 100 );
 	}
 
 	public function enqueue_styles() {
@@ -26,6 +27,19 @@ class Visital_Assets {
 			VISITAL_CORE_URI . 'assets/css/visital-core.css',
 			[],
 			VISITAL_CORE_VERSION
+		);
+	}
+
+	public function enqueue_reviews() {
+		if ( is_admin() || ! is_singular( 'specialist' ) ) {
+			return;
+		}
+		wp_enqueue_script(
+			'visital-reviews',
+			VISITAL_CORE_URI . 'assets/js/visital-reviews.js',
+			[ 'jquery' ],
+			VISITAL_CORE_VERSION,
+			true
 		);
 	}
 

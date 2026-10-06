@@ -2,7 +2,7 @@
 /**
  * Plugin Name: VisitAl Core
  * Description: Custom business logic for the VisitAl medical booking platform (availability, claiming, reviews, filters, payments and integrations) built on top of the Dr Plus theme without editing the theme core.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: VisitAl
  * Text Domain: visital-core
  * Requires PHP: 7.4
@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'VISITAL_CORE_VERSION', '1.0.6' );
+define( 'VISITAL_CORE_VERSION', '1.0.7' );
 define( 'VISITAL_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'VISITAL_CORE_URI', plugin_dir_url( __FILE__ ) );
 

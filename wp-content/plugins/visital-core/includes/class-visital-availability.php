@@ -38,6 +38,9 @@ class Visital_Availability {
 		}
 
 		$specialist_id = (int) $specialist->id;
+		if ( class_exists( 'Visital_Offices_Fix' ) ) {
+			Visital_Offices_Fix::fix( $specialist_id );
+		}
 		if ( array_key_exists( $specialist_id, $this->request_cache ) ) {
 			return $this->request_cache[ $specialist_id ];
 		}
@@ -155,6 +158,9 @@ class Visital_Availability {
 		$specialist = $this->normalize_specialist( $specialist );
 		if ( empty( $specialist ) || empty( $specialist->id ) || ! class_exists( '\DrPlus\Utils\Booking' ) ) {
 			return 0;
+		}
+		if ( class_exists( 'Visital_Offices_Fix' ) ) {
+			Visital_Offices_Fix::fix( (int) $specialist->id );
 		}
 
 		$offices = is_array( $specialist->offices ) ? $specialist->offices : [];

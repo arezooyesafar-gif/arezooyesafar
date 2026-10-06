@@ -107,7 +107,6 @@ class Visital_Profile_Book {
 		echo '</div>';
 
 		$this->styles();
-		$this->guard_script();
 	}
 
 	private function starting_price_html( $specialist ) {
@@ -157,7 +156,7 @@ class Visital_Profile_Book {
 		$printed = true;
 		?>
 		<style id="visital-book-bar-css">
-			#visital-book-bar{position:fixed;inset-inline:0;bottom:0;z-index:9990;background:#fff;border-top:1px solid rgba(0,0,0,.08);box-shadow:0 -6px 24px rgba(0,0,0,.08);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));direction:rtl}
+			#visital-book-bar{position:fixed;inset-inline:0;bottom:0;z-index:2147483000;background:#fff;border-top:1px solid rgba(0,0,0,.08);box-shadow:0 -6px 24px rgba(0,0,0,.08);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));direction:rtl}
 			#visital-book-bar .visital-book-bar-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:16px;justify-content:space-between}
 			#visital-book-bar .visital-book-bar-price{display:flex;flex-direction:column;line-height:1.4;white-space:nowrap}
 			#visital-book-bar .visital-book-bar-price-label{font-size:12px;color:#8a8a8a}
@@ -174,27 +173,8 @@ class Visital_Profile_Book {
 				#visital-book-bar .visital-book-btn{flex:1;padding:0 12px;min-height:46px;font-size:15px}
 				#visital-book-bar .visital-book-bar-price-value{font-size:14px}
 			}
-			body.visital-has-book-bar{padding-bottom:88px}
+			body:has(#visital-book-bar){padding-bottom:88px}
 		</style>
-		<?php
-	}
-
-	private function guard_script() {
-		static $printed = false;
-		if ( $printed ) {
-			return;
-		}
-		$printed = true;
-		?>
-		<script>
-		(function(){
-			var bar=document.getElementById('visital-book-bar');
-			if(!bar){return;}
-			var native=document.getElementById('specialist_booking-btn')||document.getElementById('specialist_consultation-btn');
-			if(native){bar.parentNode.removeChild(bar);return;}
-			document.body.classList.add('visital-has-book-bar');
-		})();
-		</script>
 		<?php
 	}
 }

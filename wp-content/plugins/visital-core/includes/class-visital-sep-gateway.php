@@ -96,7 +96,7 @@ function visital_sep_init_gateway() {
 			$body = wp_json_encode( [
 				'Action'      => 'Token',
 				'TerminalId'  => $this->terminal_id,
-				'RedirectUrl' => add_query_arg( 'wc-api', $this->id, home_url( '/' ) ),
+				'RedirectUrl' => WC()->api_request_url( $this->id ),
 				'ResNum'      => (string) $order_id,
 				'Amount'      => $this->to_rial( $order->get_total() ),
 				'CellNumber'  => $order->get_billing_phone(),

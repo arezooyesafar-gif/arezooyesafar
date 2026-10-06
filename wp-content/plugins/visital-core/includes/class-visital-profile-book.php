@@ -4,6 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+if ( ! class_exists( 'Visital_Profile_Book' ) ) :
+
 class Visital_Profile_Book {
 
 	private static $instance = null;
@@ -27,7 +29,12 @@ class Visital_Profile_Book {
 			return;
 		}
 
-		$specialist = \DrPlus\Model\Specialists::query()->where( 'post_id', get_the_ID() )->first();
+		$post_id = get_queried_object_id();
+		if ( ! $post_id ) {
+			$post_id = get_the_ID();
+		}
+
+		$specialist = \DrPlus\Model\Specialists::query()->where( 'post_id', $post_id )->first();
 		if ( empty( $specialist ) || empty( $specialist->id ) ) {
 			return;
 		}
@@ -191,3 +198,5 @@ class Visital_Profile_Book {
 		<?php
 	}
 }
+
+endif;

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: VisitAl Core
  * Description: Custom business logic for the VisitAl medical booking platform (availability, claiming, reviews, filters, payments and integrations) built on top of the Dr Plus theme without editing the theme core.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: VisitAl
  * Text Domain: visital-core
  * Requires PHP: 7.4
@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'VISITAL_CORE_VERSION', '1.0.1' );
+define( 'VISITAL_CORE_VERSION', '1.0.2' );
 define( 'VISITAL_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'VISITAL_CORE_URI', plugin_dir_url( __FILE__ ) );
 
@@ -35,6 +35,7 @@ final class Visital_Core {
 	private function includes() {
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-availability.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-cards.php';
+		require_once VISITAL_CORE_DIR . 'includes/class-visital-profile-book.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-calendar.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-reviews.php';
 		require_once VISITAL_CORE_DIR . 'includes/class-visital-callmask.php';
@@ -49,6 +50,7 @@ final class Visital_Core {
 
 		Visital_Availability::instance();
 		Visital_Cards::instance();
+		Visital_Profile_Book::instance();
 		Visital_Calendar::instance();
 		Visital_Reviews::instance();
 		Visital_CallMask::instance();

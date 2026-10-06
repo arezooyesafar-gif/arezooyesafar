@@ -26,9 +26,15 @@ function visital_sep_init_gateway() {
 			$this->init_form_fields();
 			$this->init_settings();
 
-			$this->title       = $this->get_option( 'title' );
-			$this->description = $this->get_option( 'description' );
-			$this->terminal_id = trim( $this->get_option( 'terminal_id' ) );
+			$this->title               = $this->get_option( 'title' );
+			$this->description         = $this->get_option( 'description' );
+			$this->terminal_id         = trim( $this->get_option( 'terminal_id' ) );
+			$this->multisettle_enabled = 'yes' === $this->get_option( 'multisettle_enabled' );
+			$this->platform_iban       = self::normalize_iban( $this->get_option( 'platform_iban' ) );
+			$this->purchase_id         = trim( (string) $this->get_option( 'purchase_id' ) );
+			if ( '' === $this->purchase_id ) {
+				$this->purchase_id = '0';
+			}
 
 			add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, [ $this, 'process_admin_options' ] );
 			add_action( 'woocommerce_receipt_' . $this->id, [ $this, 'receipt_page' ] );
@@ -59,7 +65,121 @@ function visital_sep_init_gateway() {
 					'description' => 'شماره ترمینال دریافتی از بانک سامان',
 					'default'     => '',
 				],
+				'multisettle_enabled' => [
+					'title'       => 'تسهیم (تسویه به چند حساب)',
+					'type'        => 'checkbox',
+					'label'       => 'سهم پزشک لحظهٔ پرداخت مستقیم به حسابش واریز شود',
+					'default'     => 'no',
+					'description' => 'فقط وقتی فعال کن که شبای پزشکان و پلتفرم نزد سپ ثبت و تایید شده باشد. اگر اطلاعات کامل نباشد، پرداخت به‌صورت عادی انجام می‌شود.',
+				],
+				'platform_iban' => [
+					'title'       => 'شبای پلتفرم (برای کارمزد)',
+					'type'        => 'text',
+					'description' => 'شمارهٔ شبای حساب پلتفرم که کارمزد به آن واریز می‌شود (با یا بدون IR).',
+					'default'     => '',
+				],
+				'purchase_id' => [
+					'title'       => 'شناسهٔ تسهیم (PurchaseId)',
+					'type'        => 'text',
+					'description' => 'برای تراکنش‌های عادی معمولاً 0 است. اگر سپ مقدار دیگری خواست، همان را وارد کن.',
+					'default'     => '0',
+				],
 			];
+		}
+
+		private static function normalize_iban( $iban ) {
+			$iban = strtoupper( preg_replace( '/\s+/', '', (string) $iban ) );
+			$iban = preg_replace( '/[^0-9A-Z]/', '', $iban );
+			if ( preg_match( '/^\d{24}$/', $iban ) ) {
+				$iban = 'IR' . $iban;
+			}
+			return $iban;
+		}
+
+		private function doctor_iban( $user_id ) {
+			$user_id = (int) $user_id;
+			$iban    = apply_filters( 'visital/sep/doctor_iban', '', $user_id );
+			if ( empty( $iban ) ) {
+				$iban = get_user_meta( $user_id, 'visital_sep_iban', true );
+			}
+			if ( empty( $iban ) ) {
+				$accounts = get_user_meta( $user_id, '_sheyda_wallet_financial_accounts', true );
+				if ( is_array( $accounts ) ) {
+					foreach ( $accounts as $account ) {
+						$values = is_array( $account ) ? $account : [ $account ];
+						foreach ( $values as $value ) {
+							$candidate = self::normalize_iban( $value );
+							if ( preg_match( '/^IR\d{24}$/', $candidate ) ) {
+								$iban = $candidate;
+								break 2;
+							}
+						}
+					}
+				}
+			}
+			return self::normalize_iban( $iban );
+		}
+
+		private function build_settlement( $order, $total_rial ) {
+			if ( ! $this->multisettle_enabled ) {
+				return null;
+			}
+
+			$book_data = $order->get_meta( '_booking_data' );
+			if ( empty( $book_data ) || ! is_array( $book_data ) ) {
+				return null;
+			}
+
+			$specialist_income = isset( $book_data['specialist_income'] ) ? (int) round( (float) $book_data['specialist_income'] ) : 0;
+			$commission        = isset( $book_data['commission_value'] ) ? (int) round( (float) $book_data['commission_value'] ) : 0;
+			$calc_type         = $book_data['commission_calculate_type'] ?? '';
+
+			$doctor_rial   = $this->to_rial( $specialist_income );
+			$platform_rial = 'add_to_customer_order' === $calc_type ? $this->to_rial( $commission ) : 0;
+
+			$specialist_id = isset( $book_data['specialist_id'] ) ? (int) $book_data['specialist_id'] : 0;
+			$user_id       = 0;
+			if ( $specialist_id && class_exists( '\DrPlus\Model\Specialists' ) ) {
+				$sp = \DrPlus\Model\Specialists::query()->select( 'user_id' )->where( 'id', $specialist_id )->first();
+				if ( $sp && ! empty( $sp->user_id ) ) {
+					$user_id = (int) $sp->user_id;
+				}
+			}
+			$doctor_iban = $user_id ? $this->doctor_iban( $user_id ) : '';
+
+			$lines = [];
+			if ( $doctor_rial > 0 ) {
+				if ( ! preg_match( '/^IR\d{24}$/', $doctor_iban ) ) {
+					$order->add_order_note( 'تسهیم انجام نشد: شبای معتبر برای پزشک یافت نشد. پرداخت عادی انجام شد.' );
+					return null;
+				}
+				$lines[] = [
+					'IBAN'       => $doctor_iban,
+					'Amount'     => (string) $doctor_rial,
+					'PurchaseId' => $this->purchase_id,
+				];
+			}
+			if ( $platform_rial > 0 ) {
+				if ( ! preg_match( '/^IR\d{24}$/', $this->platform_iban ) ) {
+					$order->add_order_note( 'تسهیم انجام نشد: شبای پلتفرم تنظیم نشده است. پرداخت عادی انجام شد.' );
+					return null;
+				}
+				$lines[] = [
+					'IBAN'       => $this->platform_iban,
+					'Amount'     => (string) $platform_rial,
+					'PurchaseId' => $this->purchase_id,
+				];
+			}
+
+			if ( empty( $lines ) || count( $lines ) > 9 ) {
+				return null;
+			}
+			if ( ( $doctor_rial + $platform_rial ) !== (int) $total_rial ) {
+				$order->add_order_note( 'تسهیم انجام نشد: جمع سهم‌ها با مبلغ سفارش برابر نیست. پرداخت عادی انجام شد.' );
+				return null;
+			}
+
+			return $lines;
 		}
 
 		public function process_payment( $order_id ) {
@@ -93,14 +213,22 @@ function visital_sep_init_gateway() {
 				return;
 			}
 
-			$body = wp_json_encode( [
+			$amount  = $this->to_rial( $order->get_total() );
+			$payload = [
 				'Action'      => 'Token',
 				'TerminalId'  => $this->terminal_id,
 				'RedirectUrl' => WC()->api_request_url( $this->id ),
 				'ResNum'      => (string) $order_id,
-				'Amount'      => $this->to_rial( $order->get_total() ),
+				'Amount'      => $amount,
 				'CellNumber'  => $order->get_billing_phone(),
-			] );
+			];
+
+			$settlement = $this->build_settlement( $order, $amount );
+			if ( ! empty( $settlement ) ) {
+				$payload['SettlementIbanInfo'] = $settlement;
+			}
+
+			$body = wp_json_encode( $payload );
 
 			$response = wp_remote_post( self::TOKEN_URL, [
 				'timeout' => 30,

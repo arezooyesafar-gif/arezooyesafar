@@ -23,6 +23,7 @@ if ( ! class_exists( 'Visital_Home' ) ) {
 
 		private function __construct() {
 			add_shortcode( 'visital_hero', [ $this, 'render_hero' ] );
+			add_shortcode( 'visital_specialties', [ $this, 'render_specialties' ] );
 		}
 
 		private function cities() {
@@ -163,6 +164,91 @@ if ( ! class_exists( 'Visital_Home' ) ) {
 			return ob_get_clean();
 		}
 
+		public function render_specialties( $atts ) {
+			$atts = shortcode_atts( [
+				'title'    => 'رشته‌های پربازدید ویزیتال',
+				'count'    => 8,
+				'include'  => '',
+				'all_text' => 'مشاهده همه رشته‌ها',
+			], $atts, 'visital_specialties' );
+
+			if ( ! post_type_exists( 'speciality' ) ) {
+				return '';
+			}
+
+			$query_args = [
+				'post_type'           => 'speciality',
+				'post_status'         => 'publish',
+				'orderby'             => [ 'menu_order' => 'ASC', 'title' => 'ASC' ],
+				'posts_per_page'      => max( 1, intval( $atts['count'] ) ),
+				'ignore_sticky_posts' => true,
+				'no_found_rows'       => true,
+			];
+
+			$ordered_slugs = [];
+			if ( ! empty( $atts['include'] ) ) {
+				$ordered_slugs = array_filter( array_map( 'trim', explode( ',', $atts['include'] ) ) );
+				if ( ! empty( $ordered_slugs ) ) {
+					$query_args['post_name__in'] = $ordered_slugs;
+					$query_args['posts_per_page'] = count( $ordered_slugs );
+				}
+			}
+
+			$query = new WP_Query( $query_args );
+			$posts = $query->posts;
+			wp_reset_postdata();
+
+			if ( empty( $posts ) ) {
+				return '';
+			}
+
+			if ( ! empty( $ordered_slugs ) ) {
+				$by_slug = [];
+				foreach ( $posts as $post ) {
+					$by_slug[ $post->post_name ] = $post;
+				}
+				$posts = [];
+				foreach ( $ordered_slugs as $slug ) {
+					if ( isset( $by_slug[ $slug ] ) ) {
+						$posts[] = $by_slug[ $slug ];
+					}
+				}
+			}
+
+			$archive  = get_post_type_archive_link( 'speciality' );
+			$fallback = $this->icons()['plus'];
+
+			ob_start();
+			echo $this->style_once();
+			?>
+			<section class="visital-specs">
+				<h2 class="visital-specs-title"><?php echo esc_html( $atts['title'] ); ?></h2>
+				<div class="visital-specs-grid">
+					<?php foreach ( $posts as $post ) : ?>
+						<a href="<?php echo esc_url( get_permalink( $post ) ); ?>" class="visital-spec-card">
+							<span class="visital-spec-ico">
+								<?php
+								if ( has_post_thumbnail( $post ) ) {
+									echo get_the_post_thumbnail( $post, 'thumbnail', [ 'class' => 'visital-spec-img', 'loading' => 'lazy', 'alt' => esc_attr( get_the_title( $post ) ) ] );
+								} else {
+									echo $fallback;
+								}
+								?>
+							</span>
+							<span class="visital-spec-name"><?php echo esc_html( get_the_title( $post ) ); ?></span>
+						</a>
+					<?php endforeach; ?>
+				</div>
+				<?php if ( $archive ) : ?>
+					<div class="visital-specs-all">
+						<a href="<?php echo esc_url( $archive ); ?>" class="visital-specs-all-btn"><?php echo esc_html( $atts['all_text'] ); ?></a>
+					</div>
+				<?php endif; ?>
+			</section>
+			<?php
+			return ob_get_clean();
+		}
+
 		private function icons() {
 			$open = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">';
 			return [
@@ -173,6 +259,7 @@ if ( ! class_exists( 'Visital_Home' ) ) {
 				'video'    => $open . '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>',
 				'phone'    => $open . '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
 				'chat'     => $open . '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>',
+				'plus'     => $open . '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>',
 			];
 		}
 
@@ -197,8 +284,9 @@ if ( ! class_exists( 'Visital_Home' ) ) {
 
 		private function css() {
 			return '
-			.visital-hero{--visital-navy:#002f6c;--visital-royal:#0056b3;--visital-gold:#c5a059;--visital-offwhite:#f4f7fa;background:#fff;padding:46px 16px 34px;text-align:center;direction:rtl}
-			.visital-hero *{box-sizing:border-box}
+			.visital-hero,.visital-specs{--visital-navy:#002f6c;--visital-royal:#0056b3;--visital-gold:#c5a059;--visital-offwhite:#f4f7fa}
+			.visital-hero{background:#fff;padding:46px 16px 34px;text-align:center;direction:rtl}
+			.visital-hero *,.visital-specs *{box-sizing:border-box}
 			.visital-hero-title{color:var(--visital-navy);font-size:30px;font-weight:800;line-height:1.55;margin:0 0 12px}
 			.visital-hero-subtitle{color:var(--visital-royal);font-size:17px;font-weight:600;line-height:1.7;margin:0 0 26px}
 			.visital-hero-search{max-width:820px;margin:0 auto;background:var(--visital-offwhite);border-radius:18px;padding:16px;box-shadow:0 12px 34px rgba(0,47,108,.08);display:flex;flex-direction:column;gap:12px}
@@ -218,12 +306,27 @@ if ( ! class_exists( 'Visital_Home' ) ) {
 			.visital-hero-consult-item{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e3e9f2;border-radius:30px;padding:10px 16px;color:var(--visital-navy);font-size:14px;font-weight:600;text-decoration:none;transition:border-color .2s,color .2s}
 			.visital-hero-consult-item:hover{border-color:var(--visital-gold);color:var(--visital-royal)}
 			.visital-hero-consult-item svg{width:18px;height:18px;flex:0 0 auto;color:var(--visital-gold)}
+			.visital-specs{background:#fff;padding:14px 16px 44px;text-align:center;direction:rtl}
+			.visital-specs-title{color:var(--visital-navy);font-size:23px;font-weight:800;margin:0 0 24px}
+			.visital-specs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;max-width:1040px;margin:0 auto}
+			.visital-spec-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:var(--visital-offwhite);border:1px solid #e3e9f2;border-radius:16px;padding:22px 12px;text-decoration:none;transition:border-color .2s,box-shadow .2s,transform .2s}
+			.visital-spec-card:hover{border-color:var(--visital-gold);box-shadow:0 10px 26px rgba(0,47,108,.1);transform:translateY(-2px)}
+			.visital-spec-ico{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:#fff;color:var(--visital-royal);box-shadow:0 4px 12px rgba(0,47,108,.06)}
+			.visital-spec-ico svg{width:28px;height:28px}
+			.visital-spec-img{width:34px;height:34px;object-fit:contain}
+			.visital-spec-name{color:var(--visital-navy);font-size:15px;font-weight:700;line-height:1.5}
+			.visital-specs-all{margin-top:26px}
+			.visital-specs-all-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 28px;border-radius:40px;background:var(--visital-navy);color:#fff;font-weight:700;font-size:15px;text-decoration:none;transition:background .2s}
+			.visital-specs-all-btn:hover{background:var(--visital-royal);color:#fff}
 			@media (max-width:600px){
 				.visital-hero{padding:32px 14px 26px}
 				.visital-hero-title{font-size:21px}
 				.visital-hero-subtitle{font-size:14px;margin-bottom:20px}
 				.visital-hero-search-row{flex-direction:column}
 				.visital-hero-consult-item{font-size:13px;padding:9px 14px}
+				.visital-specs-title{font-size:19px}
+				.visital-specs-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+				.visital-spec-card{padding:18px 8px}
 			}';
 		}
 

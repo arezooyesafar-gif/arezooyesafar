@@ -176,43 +176,45 @@ if ( ! class_exists( 'Visital_Home' ) ) {
 				return '';
 			}
 
-			$query_args = [
-				'post_type'           => 'speciality',
-				'post_status'         => 'publish',
-				'orderby'             => [ 'menu_order' => 'ASC', 'title' => 'ASC' ],
-				'posts_per_page'      => max( 1, intval( $atts['count'] ) ),
-				'ignore_sticky_posts' => true,
-				'no_found_rows'       => true,
-			];
+			$posts = [];
 
-			$ordered_slugs = [];
 			if ( ! empty( $atts['include'] ) ) {
-				$ordered_slugs = array_filter( array_map( 'trim', explode( ',', $atts['include'] ) ) );
-				if ( ! empty( $ordered_slugs ) ) {
-					$query_args['post_name__in'] = $ordered_slugs;
-					$query_args['posts_per_page'] = count( $ordered_slugs );
+				$entries = array_filter( array_map( 'trim', explode( ',', $atts['include'] ) ) );
+				foreach ( $entries as $entry ) {
+					$found = get_page_by_path( sanitize_title( $entry ), OBJECT, 'speciality' );
+					if ( ! $found ) {
+						$title_query = new WP_Query( [
+							'post_type'           => 'speciality',
+							'post_status'         => 'publish',
+							'title'               => $entry,
+							'posts_per_page'      => 1,
+							'ignore_sticky_posts' => true,
+							'no_found_rows'       => true,
+						] );
+						if ( ! empty( $title_query->posts ) ) {
+							$found = $title_query->posts[0];
+						}
+						wp_reset_postdata();
+					}
+					if ( $found && 'publish' === $found->post_status && ! in_array( $found, $posts, true ) ) {
+						$posts[] = $found;
+					}
 				}
+			} else {
+				$query = new WP_Query( [
+					'post_type'           => 'speciality',
+					'post_status'         => 'publish',
+					'orderby'             => [ 'menu_order' => 'ASC', 'title' => 'ASC' ],
+					'posts_per_page'      => max( 1, intval( $atts['count'] ) ),
+					'ignore_sticky_posts' => true,
+					'no_found_rows'       => true,
+				] );
+				$posts = $query->posts;
+				wp_reset_postdata();
 			}
-
-			$query = new WP_Query( $query_args );
-			$posts = $query->posts;
-			wp_reset_postdata();
 
 			if ( empty( $posts ) ) {
 				return '';
-			}
-
-			if ( ! empty( $ordered_slugs ) ) {
-				$by_slug = [];
-				foreach ( $posts as $post ) {
-					$by_slug[ $post->post_name ] = $post;
-				}
-				$posts = [];
-				foreach ( $ordered_slugs as $slug ) {
-					if ( isset( $by_slug[ $slug ] ) ) {
-						$posts[] = $by_slug[ $slug ];
-					}
-				}
 			}
 
 			$archive  = get_post_type_archive_link( 'speciality' );

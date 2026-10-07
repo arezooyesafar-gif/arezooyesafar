@@ -33,6 +33,11 @@ add_action( 'wp_footer', function () {
 		.visital-offcanvas ul ul{padding-inline-start:16px}
 		.visital-offcanvas ul ul li a{font-size:14px;font-weight:400;padding:10px 8px}
 		body.visital-noscroll{overflow:hidden}
+		.elementor-location-header .elementor-widget-drplus_button .button,
+		.elementor-location-header .elementor-widget-drplus_button a.button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;width:auto!important;max-width:none!important;white-space:nowrap!important;padding:13px 30px!important;min-height:0!important;height:auto!important;border:0!important;border-radius:40px!important;background:#F7CE68!important;background-image:none!important;color:#1B2A4A!important;font-weight:700!important;line-height:1.3!important;box-shadow:none!important}
+		.elementor-location-header .elementor-widget-drplus_button .button:hover,
+		.elementor-location-header .elementor-widget-drplus_button a.button:hover{background:#F0C04E!important;background-image:none!important;color:#1B2A4A!important}
+		.elementor-location-header .elementor-widget-drplus_button .button *{color:#1B2A4A!important;white-space:nowrap!important}
 	</style>
 	<script id="visital-header-js">
 	(function(){

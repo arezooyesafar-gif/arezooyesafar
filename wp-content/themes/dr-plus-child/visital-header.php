@@ -38,6 +38,18 @@ add_action( 'wp_footer', function () {
 		.elementor-location-header .elementor-widget-drplus_button .button:hover,
 		.elementor-location-header .elementor-widget-drplus_button a.button:hover{background:#F0C04E!important;background-image:none!important;color:#1B2A4A!important}
 		.elementor-location-header .elementor-widget-drplus_button .button *{color:#1B2A4A!important;white-space:nowrap!important}
+		.elementor-location-header .elementor-widget-drplus_button{flex:0 0 auto!important;width:auto!important;max-width:none!important}
+		.elementor-location-header .elementor-widget-drplus_button>.elementor-widget-container{width:auto!important;overflow:visible!important}
+		.elementor-location-header .elementor-element:has(>.elementor-widget-container>.elementor-widget-drplus_button),
+		.elementor-location-header .elementor-column:has(.elementor-widget-drplus_button),
+		.elementor-location-header .e-con:has(.elementor-widget-drplus_button){flex:0 0 auto!important;width:auto!important;max-width:none!important;min-width:0!important}
+		.elementor-location-header .elementor-container,
+		.elementor-location-header .e-con-inner,
+		.elementor-location-header .e-con>.e-con-inner{flex-wrap:nowrap!important;align-items:center!important;overflow:visible!important}
+		@media (max-width:782px){
+			.elementor-location-header .elementor-widget-drplus_button .button,
+			.elementor-location-header .elementor-widget-drplus_button a.button{padding:10px 18px!important;font-size:13px!important}
+		}
 	</style>
 	<script id="visital-header-js">
 	(function(){

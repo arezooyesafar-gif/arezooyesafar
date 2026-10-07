@@ -13,3 +13,4 @@ HAPPY CODING 😊
 ***************************************************************************/
 
 require_once trailingslashit( get_stylesheet_directory() ) . 'client-overrides.php';
+require_once trailingslashit( get_stylesheet_directory() ) . 'visital-header.php';

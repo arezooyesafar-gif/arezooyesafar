@@ -8,10 +8,12 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 
 	class Visital_Claim {
 
-		const DONE_META    = 'visital_claim_done';
-		const PENDING_META = 'visital_claim_pending_link';
-		const CODE_META    = 'specialist_code';
-		const COOKIE       = 'visital_pending_code';
+		const DONE_META     = 'visital_claim_done';
+		const PENDING_META  = 'visital_claim_pending_link';
+		const CODE_META     = 'specialist_code';
+		const COOKIE        = 'visital_pending_code';
+		const CLAIMED_META  = 'visital_claimed';
+		const CLAIMANT_META = 'visital_claimed_by';
 
 		private static $instance = null;
 
@@ -67,14 +69,14 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 			return array_values( array_unique( array_filter( $candidates ) ) );
 		}
 
-		private function find_by_code( $code ) {
+		private function find_by_code( $code, $exclude_user = 0 ) {
 			global $wpdb;
 			$candidates = $this->code_candidates( $code );
 			if ( empty( $candidates ) ) {
 				return null;
 			}
 
-			$user_ids = get_users( [
+			$args = [
 				'meta_query'  => [
 					[
 						'key'     => self::CODE_META,
@@ -85,7 +87,11 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 				'fields'      => 'ID',
 				'number'      => 1,
 				'count_total' => false,
-			] );
+			];
+			if ( $exclude_user ) {
+				$args['exclude'] = [ (int) $exclude_user ];
+			}
+			$user_ids = get_users( $args );
 			if ( empty( $user_ids ) ) {
 				return null;
 			}
@@ -93,7 +99,7 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 
 			$table = $this->specialists_table();
 			$row   = $wpdb->get_row(
-				$wpdb->prepare( "SELECT id, user_id, post_id, name FROM {$table} WHERE user_id = %d LIMIT 1", $user_id )
+				$wpdb->prepare( "SELECT id, user_id, post_id, name, status FROM {$table} WHERE user_id = %d LIMIT 1", $user_id )
 			);
 			if ( $row ) {
 				return $row;
@@ -105,6 +111,7 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 				'user_id' => $user_id,
 				'post_id' => 0,
 				'name'    => $user ? trim( $user->first_name . ' ' . $user->last_name ) : '',
+				'status'  => '',
 			];
 		}
 
@@ -164,14 +171,66 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 			if ( '' === $code ) {
 				return;
 			}
-			update_user_meta( $user_id, self::CODE_META, $code );
-			$row = $this->find_by_code( $code );
-			if ( $row ) {
-				update_user_meta( $user_id, self::PENDING_META, $code );
-			} else {
-				delete_user_meta( $user_id, self::PENDING_META );
+
+			$target = $this->find_by_code( $code, $user_id );
+			if ( $target && ! empty( $target->id ) && (int) $target->user_id !== (int) $user_id ) {
+				$claimed = $target->post_id ? (int) get_post_meta( $target->post_id, self::CLAIMANT_META, true ) : 0;
+				if ( ! $claimed ) {
+					if ( $this->link_profile( $user_id, $target ) ) {
+						update_user_meta( $user_id, self::PENDING_META, $code );
+					}
+				}
 			}
+
+			update_user_meta( $user_id, self::CODE_META, $code );
 			update_user_meta( $user_id, self::DONE_META, 1 );
+		}
+
+		private function link_profile( $claimant_id, $target ) {
+			global $wpdb;
+			$claimant_id = (int) $claimant_id;
+			if ( empty( $target->id ) || ! $claimant_id ) {
+				return false;
+			}
+			$claimed = $target->post_id ? (int) get_post_meta( $target->post_id, self::CLAIMANT_META, true ) : 0;
+			if ( $claimed && $claimed !== $claimant_id ) {
+				return false;
+			}
+
+			$table = $this->specialists_table();
+
+			$own = $wpdb->get_row( $wpdb->prepare( "SELECT id, post_id FROM {$table} WHERE user_id = %d LIMIT 1", $claimant_id ) );
+			if ( $own && (int) $own->id !== (int) $target->id ) {
+				if ( ! empty( $own->post_id ) ) {
+					$own_post = get_post( $own->post_id );
+					if ( $own_post && '' === trim( (string) $own_post->post_content ) ) {
+						wp_trash_post( $own->post_id );
+					}
+				}
+				$wpdb->delete( $table, [ 'id' => (int) $own->id ] );
+			}
+
+			$updated = $wpdb->update( $table, [ 'user_id' => $claimant_id ], [ 'id' => (int) $target->id ] );
+			if ( false === $updated ) {
+				return false;
+			}
+
+			if ( ! empty( $target->post_id ) ) {
+				wp_update_post( [ 'ID' => (int) $target->post_id, 'post_author' => $claimant_id ] );
+				update_post_meta( $target->post_id, self::CLAIMED_META, 1 );
+				update_post_meta( $target->post_id, self::CLAIMANT_META, $claimant_id );
+			}
+
+			$old_user = (int) $target->user_id;
+			if ( $old_user && $old_user !== $claimant_id ) {
+				delete_user_meta( $old_user, self::CODE_META );
+			}
+
+			if ( class_exists( '\DrPlus\Utils\UtilsSpecialists' ) && method_exists( '\DrPlus\Utils\UtilsSpecialists', 'clear_cache' ) ) {
+				\DrPlus\Utils\UtilsSpecialists::clear_cache( (int) $target->id );
+			}
+
+			return true;
 		}
 
 		public function capture_cookie() {

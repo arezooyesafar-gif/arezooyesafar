@@ -8,6 +8,8 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 
 	class Visital_Review {
 
+		const FLAG = 'visital_review_ts';
+
 		private static $instance = null;
 
 		private $count_cache = null;
@@ -23,6 +25,9 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 			add_action( 'admin_menu', [ $this, 'menu' ], 30 );
 			add_action( 'admin_bar_menu', [ $this, 'admin_bar' ], 90 );
 			add_action( 'wp_dashboard_setup', [ $this, 'dashboard_widget' ] );
+
+			add_action( 'drplus/specialist/saved', [ $this, 'on_specialist_saved' ], 20, 5 );
+			add_action( 'admin_post_visital_review_clear', [ $this, 'handle_clear' ] );
 		}
 
 		private function table() {
@@ -30,8 +35,40 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 			return $wpdb->prefix . 'drplus_specialists';
 		}
 
-		private function statuses() {
-			return apply_filters( 'visital/review/statuses', [ 'pending' ] );
+		public function on_specialist_saved( $specialist, $original_data = null, $data = null, $user_id = 0, $new = false ) {
+			$sid_user = ( is_object( $specialist ) && ! empty( $specialist->user_id ) ) ? (int) $specialist->user_id : (int) $user_id;
+			if ( ! $sid_user ) {
+				return;
+			}
+			$current = get_current_user_id();
+
+			if ( $current && $current === $sid_user ) {
+				update_user_meta( $sid_user, self::FLAG, time() );
+				return;
+			}
+
+			$status = '';
+			if ( is_array( $data ) && isset( $data['status'] ) ) {
+				$status = $data['status'];
+			} elseif ( is_object( $specialist ) && isset( $specialist->status ) ) {
+				$status = $specialist->status;
+			}
+			if ( in_array( $status, [ 'active', 'rejected', 'inactive', 'deleted' ], true ) ) {
+				delete_user_meta( $sid_user, self::FLAG );
+			}
+		}
+
+		public function handle_clear() {
+			if ( ! current_user_can( 'manage_options' ) ) {
+				wp_die( esc_html__( 'دسترسی مجاز نیست.', 'visital-core' ) );
+			}
+			$user_id = isset( $_GET['user'] ) ? absint( $_GET['user'] ) : 0;
+			check_admin_referer( 'visital_review_clear_' . $user_id );
+			if ( $user_id ) {
+				delete_user_meta( $user_id, self::FLAG );
+			}
+			wp_safe_redirect( $this->page_url() );
+			exit;
 		}
 
 		private function count() {
@@ -39,37 +76,69 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 				return $this->count_cache;
 			}
 			global $wpdb;
-			$statuses = $this->statuses();
-			if ( empty( $statuses ) ) {
-				$this->count_cache = 0;
-				return 0;
-			}
-			$table        = $this->table();
-			$placeholders = implode( ',', array_fill( 0, count( $statuses ), '%s' ) );
 			$this->count_cache = (int) $wpdb->get_var(
-				$wpdb->prepare( "SELECT COUNT(*) FROM {$table} WHERE status IN ({$placeholders})", $statuses )
+				$wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_key = %s", self::FLAG )
 			);
 			return $this->count_cache;
 		}
 
 		private function get_pending( $limit = 300 ) {
 			global $wpdb;
-			$statuses = $this->statuses();
-			if ( empty( $statuses ) ) {
+			$flags = $wpdb->get_results(
+				$wpdb->prepare( "SELECT user_id, meta_value FROM {$wpdb->usermeta} WHERE meta_key = %s ORDER BY meta_value+0 DESC LIMIT %d", self::FLAG, (int) $limit )
+			);
+			if ( empty( $flags ) ) {
 				return [];
 			}
-			$table        = $this->table();
-			$placeholders = implode( ',', array_fill( 0, count( $statuses ), '%s' ) );
-			$args         = array_merge( $statuses, [ (int) $limit ] );
-			return $wpdb->get_results(
-				$wpdb->prepare( "SELECT id, user_id, post_id, name, status, updated_at FROM {$table} WHERE status IN ({$placeholders}) ORDER BY updated_at DESC LIMIT %d", $args )
-			);
+
+			$user_ids = [];
+			$ts_map   = [];
+			foreach ( $flags as $flag ) {
+				$uid              = (int) $flag->user_id;
+				$user_ids[]       = $uid;
+				$ts_map[ $uid ]   = (int) $flag->meta_value;
+			}
+
+			$table = $this->table();
+			$in    = implode( ',', array_map( 'intval', $user_ids ) );
+			$rows  = $wpdb->get_results( "SELECT id, user_id, post_id, name, status FROM {$table} WHERE user_id IN ({$in})" );
+
+			$by_user = [];
+			foreach ( $rows as $r ) {
+				$by_user[ (int) $r->user_id ] = $r;
+			}
+
+			$ordered = [];
+			foreach ( $user_ids as $uid ) {
+				if ( isset( $by_user[ $uid ] ) ) {
+					$row = $by_user[ $uid ];
+				} else {
+					$user = get_userdata( $uid );
+					$row  = (object) [
+						'id'      => 0,
+						'user_id' => $uid,
+						'post_id' => 0,
+						'name'    => $user ? trim( $user->first_name . ' ' . $user->last_name ) : '',
+						'status'  => '',
+					];
+				}
+				$row->review_ts = $ts_map[ $uid ] ?? 0;
+				$ordered[]      = $row;
+			}
+			return $ordered;
 		}
 
 		private function review_url( $sid ) {
 			return add_query_arg(
 				[ 'page' => 'specialists', 'tab' => 'view', 'sid' => (int) $sid ],
 				admin_url( 'admin.php' )
+			);
+		}
+
+		private function clear_url( $user_id ) {
+			return wp_nonce_url(
+				add_query_arg( [ 'action' => 'visital_review_clear', 'user' => (int) $user_id ], admin_url( 'admin-post.php' ) ),
+				'visital_review_clear_' . (int) $user_id
 			);
 		}
 
@@ -92,7 +161,7 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 		}
 
 		public function menu() {
-			$count = $this->count();
+			$count  = $this->count();
 			$bubble = $count ? ' <span class="awaiting-mod"><span class="pending-count">' . esc_html( number_format_i18n( $count ) ) . '</span></span>' : '';
 			add_submenu_page(
 				'edit.php?post_type=specialist',
@@ -134,7 +203,7 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 				return;
 			}
 			$rows = $this->get_pending( 8 );
-			echo '<p style="font-weight:700;font-size:15px">' . sprintf( esc_html__( '%s پزشک منتظر تایید مدارک هستند.', 'visital-core' ), number_format_i18n( $count ) ) . '</p>';
+			echo '<p style="font-weight:700;font-size:15px">' . sprintf( esc_html__( '%s پزشک منتظر بررسی مدارک هستند.', 'visital-core' ), number_format_i18n( $count ) ) . '</p>';
 			echo '<ul style="margin:0">';
 			foreach ( $rows as $row ) {
 				$code = $row->user_id ? get_user_meta( $row->user_id, 'specialist_code', true ) : '';
@@ -158,7 +227,7 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 			?>
 			<div class="wrap">
 				<h1><?php esc_html_e( 'پزشکان در انتظار بررسی', 'visital-core' ); ?> <span class="count">(<?php echo esc_html( number_format_i18n( count( $rows ) ) ); ?>)</span></h1>
-				<p class="description"><?php esc_html_e( 'فهرست پزشکانی که ثبت‌نام/پروفایل خود را تکمیل و مدارک ارسال کرده‌اند و منتظر تایید مدیر هستند. روی «بررسی مدارک» بزنید تا پروفایل و مدارک باز شود.', 'visital-core' ); ?></p>
+				<p class="description"><?php esc_html_e( 'فهرست پزشکانی که پروفایل خود را تکمیل/ویرایش و مدارک ارسال کرده‌اند و منتظر بررسی مدیر هستند. روی «بررسی مدارک» بزنید تا پروفایل و مدارک باز شود. بعد از بررسی، با فعال‌کردن وضعیت یا زدن «بررسی شد» از این لیست حذف می‌شود.', 'visital-core' ); ?></p>
 
 				<?php if ( empty( $rows ) ) : ?>
 					<div class="notice notice-success inline"><p><?php esc_html_e( 'در حال حاضر هیچ پزشکی در انتظار بررسی نیست. 🎉', 'visital-core' ); ?></p></div>
@@ -168,8 +237,8 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 							<tr>
 								<th><?php esc_html_e( 'نام پزشک', 'visital-core' ); ?></th>
 								<th><?php esc_html_e( 'شماره نظام پزشکی', 'visital-core' ); ?></th>
-								<th><?php esc_html_e( 'وضعیت', 'visital-core' ); ?></th>
-								<th><?php esc_html_e( 'آخرین به‌روزرسانی', 'visital-core' ); ?></th>
+								<th><?php esc_html_e( 'وضعیت فعلی', 'visital-core' ); ?></th>
+								<th><?php esc_html_e( 'تاریخ ارسال', 'visital-core' ); ?></th>
 								<th><?php esc_html_e( 'عملیات', 'visital-core' ); ?></th>
 							</tr>
 						</thead>
@@ -184,18 +253,21 @@ if ( ! class_exists( 'Visital_Review' ) ) {
 							];
 							foreach ( $rows as $row ) :
 								$code = $row->user_id ? get_user_meta( $row->user_id, 'specialist_code', true ) : '';
-								$date = $row->updated_at ? mysql2date( 'Y/m/d H:i', $row->updated_at ) : '—';
+								$date = ! empty( $row->review_ts ) ? date_i18n( 'Y/m/d H:i', $row->review_ts ) : '—';
 								?>
 								<tr>
 									<td><strong><?php echo esc_html( $this->display_name( $row ) ); ?></strong></td>
-									<td class="ltr" style="direction:ltr;text-align:right"><?php echo $code ? esc_html( $code ) : '—'; ?></td>
-									<td><?php echo esc_html( $status_labels[ $row->status ] ?? $row->status ); ?></td>
+									<td style="direction:ltr;text-align:right"><?php echo $code ? esc_html( $code ) : '—'; ?></td>
+									<td><?php echo esc_html( $status_labels[ $row->status ] ?? ( $row->status ?: '—' ) ); ?></td>
 									<td><?php echo esc_html( $date ); ?></td>
 									<td>
-										<a class="button button-primary" href="<?php echo esc_url( $this->review_url( $row->id ) ); ?>"><?php esc_html_e( 'بررسی مدارک', 'visital-core' ); ?></a>
+										<?php if ( $row->id ) : ?>
+											<a class="button button-primary" href="<?php echo esc_url( $this->review_url( $row->id ) ); ?>"><?php esc_html_e( 'بررسی مدارک', 'visital-core' ); ?></a>
+										<?php endif; ?>
 										<?php if ( $row->post_id ) : ?>
 											<a class="button" href="<?php echo esc_url( get_permalink( $row->post_id ) ); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'مشاهده پروفایل', 'visital-core' ); ?></a>
 										<?php endif; ?>
+										<a class="button" href="<?php echo esc_url( $this->clear_url( $row->user_id ) ); ?>" onclick="return confirm('این پزشک از لیست بررسی حذف شود؟');"><?php esc_html_e( 'بررسی شد', 'visital-core' ); ?></a>
 									</td>
 								</tr>
 							<?php endforeach; ?>

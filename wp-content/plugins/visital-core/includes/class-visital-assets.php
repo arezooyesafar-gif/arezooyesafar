@@ -28,6 +28,10 @@ class Visital_Assets {
 			[],
 			VISITAL_CORE_VERSION
 		);
+		wp_add_inline_style(
+			'visital-core',
+			'.booking-calendar-wrap .otherMonth,.booking-calendar-wrap .other-month,.booking-calendar-wrap td.otherMonth,.booking-calendar-wrap td.other-month{visibility:hidden!important;pointer-events:none!important;cursor:default!important}'
+		);
 	}
 
 	public function enqueue_reviews() {

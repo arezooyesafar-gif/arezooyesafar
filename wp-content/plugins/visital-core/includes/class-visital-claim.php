@@ -56,17 +56,56 @@ if ( ! class_exists( 'Visital_Claim' ) ) {
 			return sanitize_text_field( $code );
 		}
 
+		private function code_candidates( $code ) {
+			$en = $this->normalize_code( $code );
+			if ( '' === $en ) {
+				return [];
+			}
+			$map_fa = [ '0' => '۰', '1' => '۱', '2' => '۲', '3' => '۳', '4' => '۴', '5' => '۵', '6' => '۶', '7' => '۷', '8' => '۸', '9' => '۹' ];
+			$map_ar = [ '0' => '٠', '1' => '١', '2' => '٢', '3' => '٣', '4' => '٤', '5' => '٥', '6' => '٦', '7' => '٧', '8' => '٨', '9' => '٩' ];
+			$candidates = [ $en, strtr( $en, $map_fa ), strtr( $en, $map_ar ) ];
+			return array_values( array_unique( array_filter( $candidates ) ) );
+		}
+
 		private function find_by_code( $code ) {
 			global $wpdb;
-			$code = $this->normalize_code( $code );
-			if ( '' === $code ) {
+			$candidates = $this->code_candidates( $code );
+			if ( empty( $candidates ) ) {
 				return null;
 			}
+
+			$user_ids = get_users( [
+				'meta_query'  => [
+					[
+						'key'     => self::CODE_META,
+						'value'   => $candidates,
+						'compare' => 'IN',
+					],
+				],
+				'fields'      => 'ID',
+				'number'      => 1,
+				'count_total' => false,
+			] );
+			if ( empty( $user_ids ) ) {
+				return null;
+			}
+			$user_id = (int) $user_ids[0];
+
 			$table = $this->specialists_table();
 			$row   = $wpdb->get_row(
-				$wpdb->prepare( "SELECT id, user_id, post_id, name FROM {$table} WHERE specialist_code = %s LIMIT 1", $code )
+				$wpdb->prepare( "SELECT id, user_id, post_id, name FROM {$table} WHERE user_id = %d LIMIT 1", $user_id )
 			);
-			return $row ?: null;
+			if ( $row ) {
+				return $row;
+			}
+
+			$user = get_userdata( $user_id );
+			return (object) [
+				'id'      => 0,
+				'user_id' => $user_id,
+				'post_id' => 0,
+				'name'    => $user ? trim( $user->first_name . ' ' . $user->last_name ) : '',
+			];
 		}
 
 		private function profile_name( $row ) {

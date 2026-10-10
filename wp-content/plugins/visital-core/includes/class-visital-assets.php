@@ -54,6 +54,7 @@ class Visital_Assets {
 		$deps = [ 'jquery' ];
 		if ( wp_script_is( 'drplus-pdp', 'registered' ) || wp_script_is( 'drplus-pdp', 'enqueued' ) ) {
 			$deps[] = 'drplus-pdp';
+			wp_add_inline_script( 'drplus-pdp', $this->leap_fix_js(), 'after' );
 		}
 		$deps[] = 'drplus-booking';
 
@@ -78,5 +79,9 @@ class Visital_Assets {
 				],
 			]
 		);
+	}
+
+	private function leap_fix_js() {
+		return '(function($){if(!$||!$.fn||typeof $.fn.mjpersianDatepicker!=="function"){return;}var o=$.fn.mjpersianDatepicker;$.fn.mjpersianDatepicker=function(opt){if(opt&&typeof opt==="object"){opt.calendar=opt.calendar||{};opt.calendar.persian=opt.calendar.persian||{};if(!opt.calendar.persian.leapYearMode||opt.calendar.persian.leapYearMode==="astronomical"){opt.calendar.persian.leapYearMode="algorithmic";}}return o.apply(this,arguments);};})(jQuery);';
 	}
 }
